@@ -4,24 +4,19 @@
   --background: #ffffff;
   --foreground: #171717;
   
-
-  --color-secondary: #2EA3D8; /*Botões, hover, links, icones, elementos interativos*/
-
   --color-bg-light: #F8FAFC;
   --color-dark-neutral: #111827;
 
-  /* --color-text-gray: #6B7280; */
-  --color-text-gray: #E5E7EB;
-
-
   /* Base backgrounds */
   --color-dark-bg: #0F172A;         
-  --color-dark-surface: #111C2D;     /* cards / dropdown */
+  --color-dark-surface: #111C2D; /* cards / dropdown */
   
   /* Primary brand */
   --color-primary: #1E3A5F;         
   --color-primary-hover: #274B78;   
   --color-primary-soft: #2F5D8A;    
+
+  --color-secondary: #2EA3D8;
 
   /* Text */
   --color-text-primary: #E6EDF3;    
@@ -56,7 +51,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter-next), sans-serif;
 }
-
 
 .primary-button{
   background-color: var(--color-dark-neutral);
