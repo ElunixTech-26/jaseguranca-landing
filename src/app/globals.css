@@ -7,9 +7,22 @@
   --color-bg-light: #F8FAFC;
   --color-dark-neutral: #111827;
 
+
+
+
+
+
+  --color-dark-bg: #0F172A;        /* Fundo principal (ex: Hero, Authority) */
+  --color-dark-surface: #1E293B;   /* Fundo Secundário (ex: Services - destaca os cards) */
+  --color-dark-deep: #0B1120;      /* Fundo profundo (ex: Footer ou Divider) */
+
+
+
+
   /* Base backgrounds */
+/*   
   --color-dark-bg: #0F172A;         
-  --color-dark-surface: #111C2D; /* cards / dropdown */
+  --color-dark-surface: #111C2D;  */
   
   /* Primary brand */
   --color-primary: #1E3A5F;         
@@ -65,7 +78,7 @@ body {
 
 .primary-button:hover{
   cursor: pointer;
-  background-color: var(--color-primary-hover);
+  background-color: var(--color-dark-bg);
 }
 
 

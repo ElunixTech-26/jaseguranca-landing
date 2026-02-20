@@ -1,5 +1,6 @@
 .authority {
-  background-color: var(--color-dark-bg);
+  /* background-color: var(--color-dark-bg); */
+  background-color: var(--color-dark-neutral);
   padding: 100px 24px;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }

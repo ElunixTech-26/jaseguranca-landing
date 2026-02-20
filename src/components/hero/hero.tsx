@@ -30,9 +30,9 @@ export default function Hero() {
       
       <div className={styles.content}>
         <h1 className="font-poppins text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Automação e <span className="text-(--color-accent-glow)">Segurança</span> 
+          Automação e <span className="text-(--color-secondary)">Segurança</span> 
           <br />
-          para <span className="text-(--color-accent-glow)">proteger</span> o que
+          para <span className="text-(--color-secondary)">proteger</span> o que
           <br/>
           Realmente Importa.
         </h1>

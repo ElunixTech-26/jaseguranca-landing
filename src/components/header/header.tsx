@@ -33,9 +33,9 @@ export default function Header() {
             <nav className="hidden md:block">
                 <ul className="flex gap-8">
                     <li><Link href="/" className="nav-link">Home</Link></li>
-                    <li><Link href="/services" className="nav-link">Serviços</Link></li>
-                    <li><Link href="/sobre" className="nav-link">Sobre</Link></li>
-                    <li><Link href="/contato" className="nav-link">Contato</Link></li>
+                    <li><Link href="#services" className="nav-link">Serviços</Link></li>
+                    <li><Link href="#sobre" className="nav-link">Sobre</Link></li>
+                    <li><Link href="#contato" className="nav-link">Contato</Link></li>
                 </ul>
             </nav>
 
