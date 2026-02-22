@@ -28,7 +28,7 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
   };
 
   return (
-    <section className={styles.ctaSection}>
+    <section className={styles.ctaSection} id="contato">
       <div className={styles.container}>
         
         {/* Conteúdo */}
@@ -81,7 +81,7 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
                 required
                 onChange={(e) => setFormData({...formData, servico: e.target.value})}
               >
-                <option value="nenhum" disabled>Escolha seu serviço desejado</option>
+                <option value="nenhum" disabled>Escolha o serviço desejado</option>
                 <option value="Câmeras de Segurança">Câmera de Segurança</option>
                 <option value="Automação Residêncial">Automação Residencial</option>
                 <option value="Automação Empresarial">Automação Empresarial</option>

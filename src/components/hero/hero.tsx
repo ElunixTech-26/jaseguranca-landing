@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './hero.module.css';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -43,14 +44,23 @@ export default function Hero() {
             soluções de segurança eletrônica de alta qualidade <br/>para proteger seus negócios, residências e propriedades. 
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4">
-          <button className="primary-button text-white !border-none">
-            Solicitar Orçamento
-          </button>
-          <button className="px-8 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition">
-            Nossos Serviços
-          </button>
-        </div>
+      <div className="flex flex-col md:flex-row gap-4">
+        {/* Link para o formulário (âncora na mesma página) */}
+        <Link 
+          href="/#contato" 
+          className="primary-button text-white !border-none text-center"
+        >
+          Solicitar Orçamento
+        </Link>
+
+        {/* Link para a seção de serviços na Home */}
+        <Link 
+          href="/#services" 
+          className="px-8 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition text-center"
+        >
+          Nossos Serviços
+        </Link>
+      </div>
       </div>
     </section>
   );

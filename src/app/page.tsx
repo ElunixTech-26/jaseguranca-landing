@@ -12,8 +12,7 @@ export default function Home(){
       <Services />
       {/* services */}
       {/* about */}
-      {/* cta & form */}
-      <Cta/>
+      <Cta servicoPadrao="nenhum" />
     </>
   )
 }

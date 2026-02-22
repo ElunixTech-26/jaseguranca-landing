@@ -4,8 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import styles from './header.module.css';
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+
+    const pathname = usePathname();
+    const isServicesActive = pathname.startsWith('/services');
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // Função para fechar o menu ao clicar em um link
@@ -33,9 +38,12 @@ export default function Header() {
             <nav className="hidden md:block">
                 <ul className="flex gap-8">
                     <li><Link href="/" className="nav-link">Home</Link></li>
-                    <li><Link href="#services" className="nav-link">Serviços</Link></li>
-                    <li><Link href="#sobre" className="nav-link">Sobre</Link></li>
-                    <li><Link href="#contato" className="nav-link">Contato</Link></li>
+
+                    <li><Link href="/#services" onClick={closeMenu} 
+                    className={`nav-link ${isServicesActive ? 'nav-link-fixed' : '' }`} >Serviços</Link></li>
+
+                    <li><Link href="/#sobre" className="nav-link">Sobre</Link></li>
+                    <li><Link href="/#contato" className="nav-link">Contato</Link></li>
                 </ul>
             </nav>
 
@@ -54,9 +62,12 @@ export default function Header() {
             <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuActive : ""}`}>
                 <ul className="font-poppins">
                     <li><Link href="/" onClick={closeMenu}>Início</Link></li>
-                    <li><Link href="/services" onClick={closeMenu}>Serviços</Link></li>
-                    <li><Link href="/sobre" onClick={closeMenu}>Sobre</Link></li>
-                    <li><Link href="/contato" onClick={closeMenu}>Contato</Link></li>
+                    
+                    <li><Link href="/#services" onClick={closeMenu} 
+                    className={`nav-link ${isServicesActive ? 'text-(--color-secondary)' : '' }`} >Serviços</Link></li>
+
+                    <li><Link href="/#sobre" onClick={closeMenu}>Sobre</Link></li>
+                    <li><Link href="/#contato" onClick={closeMenu}>Contato</Link></li>
                 </ul>
             </div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./service.module.css";
 import Image from "next/image";
 
@@ -5,7 +6,8 @@ const services = [
   {
     title: "Câmeras de Monitoramento",
     description: "Sistemas CFTV IP com acesso remoto e inteligência artificial.",
-    image: "/service-camera.png"
+    image: "/service-camera.png",
+    url: "services/cameras"
   },
   // {
   //   title: "Alarmes Inteligentes",
@@ -15,18 +17,21 @@ const services = [
   {
     title: "Portão Eletrônico",
     description: "Abertura ultrarrápida com máxima segurança: tecnologia que protege e agiliza seu dia.",
-    image: "/escudo.png"
+    image: "/escudo.png",
+    url: "services/portoes-eletronicos"
   },
 
   {
-    title: "Cerca Elétrica e Concertina",
+    title: "Cerca Eletrônica e Concertina",
     description: "Proteção perimetral de alta voltagem para máxima segurança.",
-    image: "/cercas.png"
+    image: "/cercas.png",
+    url: "services/cercas-eletronicas"
   },
   {
     title: "Controle de Acesso",
     description: "Fechaduras biométricas, faciais e interfonis para condomínios.",
-    image: "/footprint.png"
+    image: "/footprint.png",
+    url: "services/Controles-de-acesso"
   }
 ];
 
@@ -59,7 +64,9 @@ export default function Service() {
               <div className={styles.cardContent}>
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
                 <p className={styles.serviceDescription}>{service.description}</p>
-                <button className={styles.learnMore}>Ver Detalhes</button>
+                <Link href={`${service.url}`}>
+                  <button className={styles.learnMore}>Ver Detalhes</button>
+                </Link>
               </div>
             </div>
           ))}

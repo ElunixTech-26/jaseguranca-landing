@@ -8,6 +8,7 @@
   justify-content: center;
   overflow: hidden;
   background-color: var(--color-dark-bg);
+  margin-top: -50px;
 }
 
 .overlay {
@@ -33,10 +34,6 @@
   text-align: center;
 }
 
-.content h1, .content p, .content div {
-  animation: fadeInUp 0.8s ease forwards;
-  opacity: 0;
-}
 
 .content p {
   animation-delay: 0.2s;
@@ -55,6 +52,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.content h1, .content p, .content div {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
 }
 
 .secondaryButton {
@@ -80,4 +82,9 @@
   .content {
     text-align: left;
   }
+
+  .hero{
+    margin-top: -20px;
+  }
+
 }

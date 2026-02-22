@@ -30,9 +30,9 @@ export default function Footer() {
           <h3 className={styles.title}>Navegação</h3>
           <ul className={styles.list}>
             <li><Link href="/">Início</Link></li>
-            <li><Link href="/sobre">Sobre Nós</Link></li>
-            <li><Link href="/services">Serviços</Link></li>
-            <li><Link href="/contato">Contato</Link></li>
+            <li><Link href="/#sobre">Sobre Nós</Link></li>
+            <li><Link href="/#services">Serviços</Link></li>
+            <li><Link href="/#contato">Contato</Link></li>
           </ul>
         </div>
 
@@ -41,9 +41,10 @@ export default function Footer() {
           <h3 className={styles.title}>Serviços</h3>
           <ul className={styles.list}>
             <li>Câmeras de Monitoramento</li>
-            <li>Alarmes Inteligentes</li>
+            <li>Alarmes & Sensores Inteligentes</li>
             <li>Cerca Elétrica</li>
             <li>Controle de Acesso</li>
+            <li>Automação Residencial</li>
           </ul>
         </div>
 
