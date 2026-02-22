@@ -7,11 +7,17 @@ const services = [
     description: "Sistemas CFTV IP com acesso remoto e inteligência artificial.",
     image: "/service-camera.png"
   },
+  // {
+  //   title: "Alarmes Inteligentes",
+  //   description: "Sensores de presença e pânico com monitoramento via aplicativo.",
+  //   image: "/escudo.png"
+  // },
   {
-    title: "Alarmes Inteligentes",
-    description: "Sensores de presença e pânico com monitoramento via aplicativo.",
+    title: "Portão Eletrônico",
+    description: "Abertura ultrarrápida com máxima segurança: tecnologia que protege e agiliza seu dia.",
     image: "/escudo.png"
   },
+
   {
     title: "Cerca Elétrica e Concertina",
     description: "Proteção perimetral de alta voltagem para máxima segurança.",

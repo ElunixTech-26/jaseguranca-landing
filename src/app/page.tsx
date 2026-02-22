@@ -1,4 +1,5 @@
 import Authority from "@/components/authority/authority";
+import Cta from "@/components/cta/cta";
 import Hero from "@/components/hero/hero";
 import Services from "@/components/services/service";
 
@@ -12,6 +13,7 @@ export default function Home(){
       {/* services */}
       {/* about */}
       {/* cta & form */}
+      <Cta/>
     </>
   )
 }
