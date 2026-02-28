@@ -3,6 +3,7 @@ import Cta from "@/components/cta/cta";
 import Faq from "@/components/faq/faq";
 import Hero from "@/components/hero/hero";
 import Services from "@/components/services/service";
+import Sobre from "@/components/sobre/sobre";
 
 export default function Home(){
 
@@ -11,7 +12,7 @@ export default function Home(){
       <Hero />
       <Authority />
       <Services />
-      {/* about */}
+      <Sobre />
       {/* testimonials & partnerships */}
       <Cta servicoPadrao="nenhum" />
       <Faq />
