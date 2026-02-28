@@ -3,6 +3,7 @@ import styles from "@/app/services/cameras/CameraPage.module.css"
 import Cta from "@/components/cta/cta";
 import Image from "next/image";
 import { Metadata } from "next";
+import Faq from "@/components/faq/faq";
 
 export const metadata: Metadata = {
   title: "Portões Eletrônicos | J.A Segurança",
@@ -110,6 +111,8 @@ export default function PortaoPage(){
       </section>
 
       <Cta servicoPadrao="Portão Eletrônico" />
+      <Faq />
+      
     </main>
   );
 }

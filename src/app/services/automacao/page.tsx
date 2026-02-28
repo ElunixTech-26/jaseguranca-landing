@@ -5,44 +5,42 @@ import { Metadata } from "next";
 import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
 import Faq from "@/components/faq/faq";
 
-// Este objeto é o que o Google lê
 export const metadata: Metadata = {
-  title: "Câmeras de Segurança e Monitoramento 24h | J.A Segurança",
-  description: "Instalação profissional de sistemas de CFTV, câmeras IP e acesso remoto em Canoas e região. Proteja seu patrimônio com tecnologia de ponta.",
-  keywords: ["câmeras de segurança", "monitoramento 24h", "segurança eletrônica canoas", "instalação cftv", "J.A Segurança"],
-  // OpenGraph faz o link ficar bonito quando compartilhado no WhatsApp/Social
+  title: "Automação Residencial e Empresarial Inteligente | J.A Segurança",
+  description: "Transforme sua casa ou empresa com automação inteligente. Controle iluminação, ar-condicionado, portões e mais via voz ou smartphone. Tecnologia de ponta em Canoas.",
+  keywords: ["automação residencial", "casa inteligente", "automação empresarial", "Alexa", "Google Home", "smart home canoas", "J.A Segurança"],
   openGraph: {
-    title: "Monitoramento Inteligente - J.A Segurança Eletrônica",
-    description: "Sistemas de alta performance com acesso pelo celular.",
-    images: ["/logo-base-letter-jpeg.png"], // Imagem que aparece no compartilhamento
+    title: "Sua Casa Inteligente - J.A Segurança",
+    description: "Conforto, economia e tecnologia sob seu comando.",
+    images: ["/automacao-card.png"],
   },
 };
 
 const passosInstalacao = [
   {
     numero: "01",
-    titulo: "Análise de Pontos Cego",
-    descricao: "Visitamos o local para identificar os pontos estratégicos e garantir 100% de cobertura sem falhas."
+    titulo: "Diagnóstico de Infraestrutura",
+    descricao: "Mapeamos os dispositivos que você deseja automatizar, verificando a compatibilidade de redes Wi-Fi e hubs de automação para garantir estabilidade total."
   },
   {
     numero: "02",
-    titulo: "Infraestrutura e Cabeamento",
-    descricao: "Realizamos a passagem de cabos blindados ou configuração de rede Wi-Fi dedicada para evitar interferências."
+    titulo: "Instalação de Atuadores Inteligentes",
+    descricao: "Instalamos relés, módulos de iluminação e sensores embutidos, mantendo a estética original do seu ambiente com acabamento impecável."
   },
   {
     numero: "03",
-    titulo: "Fixação e Ajuste de Ângulo",
-    descricao: "Instalamos os equipamentos e ajustamos o foco e ângulo de visão para máxima nitidez dia e noite."
+    titulo: "Configuração do Hub Central",
+    descricao: "Configuramos o 'cérebro' da sua casa. Unificamos todos os aparelhos (TV, Ar, Portão) em uma única interface intuitiva e potente."
   },
   {
     numero: "04",
-    titulo: "Configuração e Treinamento",
-    descricao: "Configuramos o acesso no seu celular e ensinamos você a monitorar tudo em tempo real."
+    titulo: "Criação de Rotinas e Cenas",
+    descricao: "Criamos automações inteligentes como 'Chegar em Casa' (luzes acendem, ar liga, portão abre) ou 'Sair de Casa' (tudo desliga, alarme ativa)."
   },
   {
     numero: "05",
-    titulo: "Término e cobrança",
-    descricao: "Depois do serviço concluido, o técnico irá olhar para ti e dizer: NÃAAAAAAAAAO PORQUE EU SUBO NO TELHADO E COBRO 5 PILA."
+    titulo: "Integração por Voz",
+    descricao: "Conectamos sua casa com Alexa ou Google Assistente, tornando a automação uma extensão natural da sua rotina através de comandos de voz."
   }
 ];
 
@@ -60,34 +58,35 @@ export default function CamerasPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`${styles.animateIn} text-center lg:text-left`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Monitoramento <span className="text-(--color-secondary)">Inteligente</span>
+              Sua casa ou empresa, <span className="text-(--color-secondary)">sob seu comando.</span>
             </h1>
             <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-              Instalamos sistemas de CFTV com diversas opções de escolha. Temos câmeras com reconhecimento facial, visão noturna, detecção de movimento humana e opções de câmeras com inteligência artificial. Tudo fácil e rápido na palma da sua mão.   
+              Transforme seu ambiente em um ecossistema inteligente. De comandos de voz à automação completa de ar-condicionado, iluminação e portões, a J.A Segurança integra tudo para que você tenha controle total, conforto e economia de energia com um simples toque ou comando de voz. 
            </p>
             <ul className={`${styles.checks}`}>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Resolução 4K Ultra HD</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Visão Noturna</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Inteligência Artificial</li>
+              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Integração Alexa e Google Assistente</li>
+              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Controle Total via Smartphone</li>
+              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Economia Real de Energia</li>
             </ul>
           </div>
           
-          {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
+          {/*Foto 1 (Principal): Uma sala de estar moderna com iluminação aconchegante (que você automatizou).
+            Foto 2 (Detalhe): Um close de um smartphone com o App de automação aberto (mostrando o controle do Ar ou da TV).
+            Foto 3 (Detalhe): Uma pessoa dando um comando de voz perto de uma Echo Dot (Alexa) ou um interruptor touch inteligente. */}
           <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
             
-            {/* FOTO 1 - Âncora Vertical */}
-            <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} relative lg:col-span-15 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
               <Image 
-                src="/camera-poste.png" 
+                src="/automacao-card.png" 
                 alt="Instalação em altura" 
                 fill 
                 priority
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* FOTO 2 - Superior Direita */}
+{/* 
+         
             <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[250px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.2s' }}>
               <Image 
@@ -98,7 +97,7 @@ export default function CamerasPage() {
               />
             </div>
 
-            {/* FOTO 3 - Inferior Direita - desktop */}
+          
             <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.6s' }}>
               <Image 
@@ -107,7 +106,7 @@ export default function CamerasPage() {
                 fill 
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
-            </div>
+            </div> */}
 
 
           </div>
@@ -147,9 +146,8 @@ export default function CamerasPage() {
         </div>
       </section>
 
-      <Cta servicoPadrao="Câmeras de Segurança" />
+      <Cta servicoPadrao="Automação Residencial" />
       <Faq />
-      
     </main>
   );
 }

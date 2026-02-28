@@ -83,7 +83,7 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
               >
                 <option value="nenhum" disabled>Escolha o serviço desejado</option>
                 <option value="Câmeras de Segurança">Câmera de Segurança</option>
-                <option value="Automação Residêncial">Automação Residencial</option>
+                <option value="Automação Residencial">Automação Residencial</option>
                 <option value="Portão Eletrônico">Portão Eletrônico</option>
                 <option value="Cerca Eletrônica">Cerca Eletrônica</option>
                 <option value="Sensores e Alarmes">Sensores e Alarmes</option>

@@ -41,9 +41,9 @@ const services = [
   },
   {
     title: "Automações Residênciais",
-    description: "descrição a definir...",
+    description: "Transforme sua rotina com ambientes automatizados. Controle iluminação, ar-condicionado, TV e portões por voz ou smartphone. Conforto e economia sob seu comando.",
     image: "/automacao-card.png",
-    url: "services/automacao_resindencial"
+    url: "services/automacao"
   }
 ];
 

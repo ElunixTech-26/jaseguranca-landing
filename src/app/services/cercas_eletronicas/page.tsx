@@ -3,6 +3,7 @@ import Cta from "@/components/cta/cta";
 import styles from '@/app/services/cameras/CameraPage.module.css'
 import { Metadata } from "next";
 import Image from "next/image";
+import Faq from "@/components/faq/faq";
 
 export const metadata: Metadata = {
   title: "Cercas Elétricas e Concertinas | J.A Segurança",
@@ -138,6 +139,8 @@ export default function CercasPage(){
       </section>
 
       <Cta servicoPadrao="Cerca Eletrônica" />
+      <Faq />
+      
     </main>
   );
 }

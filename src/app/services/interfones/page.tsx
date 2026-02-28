@@ -3,6 +3,7 @@ import styles from "@/app/services/cameras/CameraPage.module.css"
 import Image from "next/image";
 import { Metadata } from "next";
 import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
+import Faq from "@/components/faq/faq";
 
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comunicação e Acesso Seguro - J.A Segurança",
     description: "Identifique visitantes e abra portões de qualquer lugar.",
-    images: ["/logo-base-letter-jpeg.png"],
+    images: ["/footprint-card.png"],
   },
 };
 
@@ -151,6 +152,8 @@ export default function InterfonesPage() {
       </section>
 
       <Cta servicoPadrao="Interfones" />
+      <Faq />
+      
     </main>
   );
 }
