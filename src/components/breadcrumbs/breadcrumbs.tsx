@@ -11,7 +11,8 @@ const routeConfig: Record<string, { label: string; href?: string }> = {
   cameras: { label: "Câmeras de Segurança" },
   portoes_eletronicos: { label: "Portões Eletrônicos" },
   automacao: { label: "Automações" },
-  cercas_eletronicas: { label: "Concertinas e Cercas Eletrônicas " }
+  cercas_eletronicas: { label: "Concertinas e Cercas Eletrônicas " },
+  alarmes_e_sensores: { label: "Sensores e Alarmes"}
 };
 
 

@@ -34,8 +34,8 @@ const services = [
     url: "services/Controles_de_acesso"
   },
   {
-    title: "Alarmes & Sensores",
-    description: "descrição a definir...",
+    title: "Sensores e Alarmes Inteligentes",
+    description: "Proteção invisível com tecnologia de barreira infravermelha. Detecção precisa de movimento com envio de alertas em tempo real. Segurança total, dia e noite.",
     image: "/sensor-e-alarme-card.png",
     url: "services/alarmes_e_sensores"
   },

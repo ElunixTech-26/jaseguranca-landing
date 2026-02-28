@@ -87,6 +87,7 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
                 <option value="Automação Empresarial">Automação Empresarial</option>
                 <option value="Portão Eletrônico">Portão Eletrônico</option>
                 <option value="Cerca Eletrônica">Cerca Eletrônica</option>
+                <option value="Sensores e Alarmes">Sensores e Alarmes</option>
               </select>
             </div>
 
