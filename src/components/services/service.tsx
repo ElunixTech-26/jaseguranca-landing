@@ -28,10 +28,10 @@ const services = [
     url: "services/cercas_eletronicas"
   },
   {
-    title: "Controles de Acesso",
-    description: "Fechaduras biométricas, faciais e interfones para condomínios.",
+    title: "Interfones e Porteiros Eletrônicos",
+    description: "Comunicação clara e abertura remota de portões. Sistemas analógicos e digitais com vídeo HD para identificação segura de visitantes. Praticidade e segurança no seu acesso.",
     image: "/footprint-card.png",
-    url: "services/Controles_de_acesso"
+    url: "services/interfones"
   },
   {
     title: "Sensores e Alarmes Inteligentes",
