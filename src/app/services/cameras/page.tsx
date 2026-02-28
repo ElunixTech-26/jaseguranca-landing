@@ -56,52 +56,61 @@ export default function CamerasPage() {
 
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className={styles.animateIn}>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className={`${styles.animateIn} text-center lg:text-left`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
               Monitoramento <span className="text-(--color-secondary)">Inteligente</span>
             </h1>
             <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
               Instalamos sistemas de CFTV com diversas opções de escolha. Temos câmeras com reconhecimento facial, visão noturna, detecção de movimento humana e opções de câmeras com inteligência artificial. Tudo fácil e rápido na palma da sua mão.   
            </p>
-            <ul className="space-y-4 text-white font-medium">
+            <ul className={`${styles.checks}`}>
               <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Resolução 4K Ultra HD</li>
               <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Visão Noturna</li>
               <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Inteligência Artificial</li>
             </ul>
           </div>
+          
+          {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
+            
+            {/* FOTO 1 - Âncora Vertical */}
+            <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.4s' }}>
+              <Image 
+                src="/camera-poste.png" 
+                alt="Instalação em altura" 
+                fill 
+                priority
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
 
-          <div className={`${styles.animateIn} relative h-[450px] rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
-               style={{ animationDelay: '0.2s' }}>
-            <Image 
-              src="/camera-poste.png" 
-              alt="Instalação de Câmeras Profissional" 
-              fill 
-              className="object-cover"
-            />
+            {/* FOTO 2 - Superior Direita */}
+            <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[250px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.2s' }}>
+              <Image 
+                src="/cameras-intelbras.jpeg" 
+                alt="Monitoramento Profissional" 
+                fill 
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            {/* FOTO 3 - Inferior Direita - desktop */}
+            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.6s' }}>
+              <Image 
+                src="/cameras-intelbras-2.png" 
+                alt="Câmeras de alta tecnologia" 
+                fill 
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+
           </div>
-
-          <div className={`${styles.animateIn} relative h-[450px] rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
-               style={{ animationDelay: '0.4s' }}>
-            <Image 
-              src="/cameras-intelbras.jpeg" 
-              alt="Instalação de Câmeras Profissional" 
-              fill 
-              className="object-cover"
-            />
-          </div>
-
-          <div className={`${styles.animateIn} relative h-[450px] rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
-               style={{ animationDelay: '0.6s' }}>
-            <Image 
-              src="/cameras-intelbras-2.png" 
-              alt="Instalação de Câmeras Profissional" 
-              fill 
-              className="object-cover"
-            />
-          </div>
-
-
+          
         </div>
       </section>
 

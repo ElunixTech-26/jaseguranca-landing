@@ -10,8 +10,8 @@ export default function Home(){
       <Hero />
       <Authority />
       <Services />
-      {/* services */}
       {/* about */}
+      {/* testimonials & partnerships */}
       <Cta servicoPadrao="nenhum" />
     </>
   )

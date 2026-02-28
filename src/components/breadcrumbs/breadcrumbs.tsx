@@ -9,9 +9,11 @@ import styles from './breadcrumbs.module.css';
 const routeConfig: Record<string, { label: string; href?: string }> = {
   services: { label: "Serviços", href: "/#services" },
   cameras: { label: "Câmeras de Segurança" },
-  portoes: { label: "Portões Eletrônicos" },
-  automacao: { label: "Automações" }
+  portoes_eletronicos: { label: "Portões Eletrônicos" },
+  automacao: { label: "Automações" },
+  cercas_eletronicas: { label: "Concertinas e Cercas Eletrônicas " }
 };
+
 
 export default function Breadcrumbs() {
   const pathname = usePathname();

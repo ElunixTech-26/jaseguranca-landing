@@ -6,7 +6,7 @@ const services = [
   {
     title: "Câmeras de Monitoramento",
     description: "Sistemas CFTV IP com acesso remoto e inteligência artificial.",
-    image: "/service-camera.png",
+    image: "/service-camera-card.png",
     url: "services/cameras"
   },
   // {
@@ -15,23 +15,35 @@ const services = [
   //   image: "/escudo.png"
   // },
   {
-    title: "Portão Eletrônico",
+    title: "Portões Eletrônicos",
     description: "Abertura ultrarrápida com máxima segurança: tecnologia que protege e agiliza seu dia.",
-    image: "/escudo.png",
-    url: "services/portoes-eletronicos"
+    image: "/portao-card.png",
+    url: "services/portoes_eletronicos"
   },
 
   {
-    title: "Cerca Eletrônica e Concertina",
+    title: "Cercas Eletrônicas e Concertinas",
     description: "Proteção perimetral de alta voltagem para máxima segurança.",
-    image: "/cercas.png",
-    url: "services/cercas-eletronicas"
+    image: "/cercas-card.png",
+    url: "services/cercas_eletronicas"
   },
   {
-    title: "Controle de Acesso",
-    description: "Fechaduras biométricas, faciais e interfonis para condomínios.",
-    image: "/footprint.png",
-    url: "services/Controles-de-acesso"
+    title: "Controles de Acesso",
+    description: "Fechaduras biométricas, faciais e interfones para condomínios.",
+    image: "/footprint-card.png",
+    url: "services/Controles_de_acesso"
+  },
+  {
+    title: "Alarmes & Sensores",
+    description: "descrição a definir...",
+    image: "/sensor-e-alarme-card.png",
+    url: "services/alarmes_e_sensores"
+  },
+  {
+    title: "Automações Residênciais",
+    description: "descrição a definir...",
+    image: "/automacao-card.png",
+    url: "services/automacao_resindencial"
   }
 ];
 

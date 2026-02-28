@@ -8,7 +8,7 @@
   justify-content: center;
   overflow: hidden;
   background-color: var(--color-dark-bg);
-  margin-top: -50px;
+  margin-top: -10px;
 }
 
 .overlay {
@@ -19,8 +19,8 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(15, 23, 42, 0.95),
-    rgba(15, 23, 42, 0.90)
+    rgba(15, 23, 42, 0.85),
+    rgba(15, 23, 42, 0.80)
   );
   z-index: 1;
 }

@@ -18,6 +18,18 @@
   }
 }
 
+.checks {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 12px;
+  color: white;
+  font-size: medium;
+  margin-bottom: 2rem;    
+}
+
+
+
 .animateIn {
   animation: reveal 0.8s ease forwards;
   opacity: 0;
@@ -121,3 +133,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .checks {
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    flex-wrap: wrap;      
+    gap: 24px;            
+  }
+}

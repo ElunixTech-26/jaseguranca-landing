@@ -1,0 +1,115 @@
+import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
+import styles from "@/app/services/cameras/CameraPage.module.css"
+import Cta from "@/components/cta/cta";
+import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portões Eletrônicos | J.A Segurança",
+  description: "Instalação profissional de Portões Eletrônicos, com alta velocidade de fechamento em Canoas e região. Proteja seu patrimônio com tecnologia de ponta.",
+  keywords: ["portões eletrônicos", "portão rápido", "segurança eletrônica canoas", "instalação de portões", "J.A Segurança", "canoas"],
+  openGraph: {
+    title: "Portôes ultra-rápidos - J.A Segurança Eletrônica",
+    description: "Sistemas de portões com alta velocidade e maior segurança para o ambiente.",
+    images: ["/logo-base-letter-jpeg.png"],
+  },
+};
+
+const passosInstalacao = [
+  {
+    numero: "01",
+    titulo: "Avaliação Técnica e Peso",
+    descricao: "Analisamos o peso e o fluxo de uso do portão para selecionar o motor com a potência (HP) correta, garantindo que o sistema nunca trabalhe sob sobrecarga."
+  },
+  {
+    numero: "02",
+    titulo: "Instalação de Motores Rápidos",
+    descricao: "Implementamos tecnologias de alta velocidade que permitem a abertura total em até 2 segundos, reduzindo o tempo de exposição na rua."
+  },
+  {
+    numero: "03",
+    titulo: "Configuração Antiesmagamento",
+    descricao: "Instalamos sensores de barreira (fotocélulas) que interrompem o fechamento caso detectem crianças, animais ou veículos, evitando acidentes e danos materiais."
+  },
+  {
+    numero: "04",
+    titulo: "Controle e Criptografia",
+    descricao: "Configuramos controles com tecnologia Rolling Code (anticlonagem) e integramos o comando ao seu smartphone ou farol do carro (PPA/Intelbras)."
+  }
+];
+
+export default function PortaoPage(){
+     return (
+    <main className={styles.main}>
+
+      <div className="max-w-7xl mx-auto px-6">
+          <Breadcrumbs />
+      </div>
+
+
+      {/* HERO DA PÁGINA */}
+      <section className={styles.heroSection}>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className={styles.animateIn}>
+            <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
+              Abertura <span className="text-(--color-secondary)">Ultra-Rápida</span> para sua total segurança.
+            </h1>
+            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
+              Não fique vulnerável esperando seu portão abrir. Instalamos motores de alta performance que garantem rapidez, durabilidade e o controle total do acesso à sua residência na palma da mão.   
+           </p>
+           <ul className="space-y-4 text-white font-medium">
+              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Abertura em até 4 segundos</li>
+              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Controles Criptografados (Anti-clonagem)</li>
+              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Sistema de No-break integrado</li>
+            </ul>
+          </div>
+        
+          <div className={`${styles.animateIn} relative h-[450px] rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
+               style={{ animationDelay: '0.2s' }}>
+            <Image 
+              src="/motor-portao.jpeg" 
+              alt="Instalação de Portão Eletrônico" 
+              fill 
+              className="object-cover"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      {/* SEÇÃO COMO FUNCIONA */}
+      <section className={styles.timelineSection}>
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold text-white font-poppins">Como funciona a instalação?</h2>
+        </div>
+
+        <div className={styles.timelineWrapper}>
+          <div className={styles.line}></div>
+
+          {passosInstalacao.map((passo, index) => (
+            <div 
+              key={index} 
+              className={`${styles.stepRow} ${index % 2 !== 0 ? styles.stepRowInverse : ""} ${styles.animateIn}`}
+              style={{ animationDelay: `${0.3 + index * 0.15}s` }}
+            >
+              <div className={styles.card}>
+                <span className={styles.number}>{passo.numero}</span>
+                <h3 className="text-xl font-bold text-white mt-4 mb-2">{passo.titulo}</h3>
+                <p className="text-(--color-text-secondary) leading-relaxed">
+                  {passo.descricao}
+                </p>
+              </div>
+
+              <div className={styles.dot}></div>
+              
+              {/* Espaçador invisível para manter o grid no desktop */}
+              <div className="hidden md:block w-[45%]"></div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <Cta servicoPadrao="Portão Eletrônico" />
+    </main>
+  );
+}
