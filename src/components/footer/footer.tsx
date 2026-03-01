@@ -6,6 +6,11 @@ import { BsTelephoneFill, BsGeoAltFill, BsInstagram, BsWhatsapp, BsMailbox, BsEn
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+    const numeroTelefone = "555183490527"; 
+    const mensagem = `Olá, vim pelo site! Gostaria de realizar um orçamento.`;
+    
+    const url = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -21,7 +26,8 @@ export default function Footer() {
             <span className="font-poppins font-bold text-white tracking-widest uppercase">J.A Segurança</span>
           </div>
           <p className={styles.description}>
-            Especializada em fornecer soluções de segurança eletrônica de alta qualidade para proteger seus negócios, residências e propriedades. Com nossa experiência e conhecimento em segurança eletrônica, estamos aqui para ajudar você a garantir a segurança do seus familiares e patrimônio!
+            <span className="font-bold">Soluções de segurança eletrônica para proteger negócios, residências e patrimônios.</span> <br/> <br/>
+            Tecnologia de ponta e expertise para garantir tranquilidade e proteção total.
           </p>
         </div>
 
@@ -40,11 +46,24 @@ export default function Footer() {
         <div className={styles.column}>
           <h3 className={styles.title}>Serviços</h3>
           <ul className={styles.list}>
-            <li>Câmeras de Monitoramento</li>
-            <li>Alarmes & Sensores Inteligentes</li>
-            <li>Cerca Elétrica</li>
-            <li>Controle de Acesso</li>
-            <li>Automação Residencial</li>
+            <li>
+              <Link href={"/services/cameras"}>Câmeras de Monitoramento</Link>
+            </li>
+            <li>
+              <Link href={"/services/alarmes_e_sensores"}>Alarmes & Sensores Inteligentes</Link>
+            </li>
+            <li>
+              <Link href={"/services/cercas_eletronicas"}>Cercas Eletrônicas</Link>
+            </li>
+            <li>
+              <Link href={"/services/interfones"}>Controle de Acesso</Link>
+            </li>
+            <li>
+              <Link href={"/services/automacao"}>Automação Residencial</Link>
+            </li>
+            <li>
+              <Link href={"/services/portoes_eletronicos"}>Portões Eletrônicos</Link>
+            </li>
           </ul>
         </div>
 
@@ -62,7 +81,7 @@ export default function Footer() {
             </li>
             <li className={`flex items-center gap-1 ${styles.socialLinks}`}>
                 <BsWhatsapp className={`text-(--color-secondary) ${styles.socialIcon}`} />
-                <Link href={"https://wa.me/555183490527"}>Whatsapp</Link>
+                <Link href={url}>Whatsapp</Link>
             </li>
             <li className={`flex items-center gap-1 ${styles.socialLinks}`}>
                 <BsEnvelopeFill className={`text-(--color-secondary) ${styles.socialIcon}`} />

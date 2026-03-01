@@ -56,20 +56,30 @@ export default function InterfonesPage() {
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className={`${styles.animateIn} text-center lg:text-left`}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Identificação Total e <span className="text-(--color-secondary)">Acesso Seguro</span>
-            </h1>
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-             Não se exponha ao desconhecido. Com nossos sistemas de vídeo porteiros IP, você visualiza, conversa e libera o acesso ao seu imóvel através do smartphone. Tecnologia e conveniência para quem não abre mão da segurança máxima no primeiro contato.
-           </p>
-            <ul className={`${styles.checks}`}>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Imagem Full HD com Visão Noturna</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Abertura Remota via Aplicativo</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Gravação de Fotos de Visitantes</li>
-            </ul>
-          </div>
+        <div className={`${styles.animateIn} text-center lg:text-left`}>
+          <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
+            Identificação Total e <span className="text-(--color-secondary)">Acesso Seguro</span>
+          </h1>
           
+          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+            Não se exponha ao desconhecido. Com a linha de vídeo porteiros <strong className="text-white">Intelbras</strong>, você assume o controle da sua entrada principal. 
+            Nossa tecnologia permite que você visualize, converse e libere o acesso ao seu imóvel através do seu smartphone, esteja você onde estiver. 
+            É a união perfeita entre a segurança de saber quem toca à sua porta e a conveniência de comandar tudo na palma da sua mão. 
+            Proteja sua família e garanta que cada visitante seja devidamente identificado antes de qualquer interação.
+          </p>
+
+          <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Tecnologia <strong className="text-white">Intelbras</strong> de vídeo e áudio HD
+            </li>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Abertura remota segura via aplicativo
+            </li>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Registro de visitas: fotos e vídeos de quem toca
+            </li>
+          </ul>
+        </div>
           {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
           <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
             

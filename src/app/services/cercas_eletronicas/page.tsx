@@ -55,13 +55,25 @@ export default function CercasPage(){
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
               Proteção Perimetral: A <span className="text-(--color-secondary)">Primeira Linha</span> de Defesa.
             </h1>
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-              Impeça a intrusão antes que ela aconteça. Nossas soluções de cercas eletrificadas e concertinas em aço galvalume criam uma barreira física e psicológica intransponível para o seu patrimônio. 
-           </p>
-            <ul className={`${styles.checks}`}>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Choque de alta voltagem (não letal)</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Aço Galvalume de alta durabilidade</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Alarme integrado em caso de corte</li>
+            
+            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+              Impeça a intrusão antes que ela aconteça. Nossas soluções de proteção perimetral combinam a robustez das concertinas em aço galvalume 
+              com a precisão tecnológica dos eletrificadores <strong className="text-white">Intelbras</strong>. Criamos um sistema que vai além da barreira física: 
+              é uma barreira psicológica e tecnológica intransponível. Desenvolvidos para resistir às intempéries, nossos sistemas monitoram 
+              constantemente a integridade do perímetro, disparando alertas imediatos ao menor sinal de tentativa de corte ou toque, garantindo 
+              a segurança total do seu patrimônio 24 horas por dia.
+            </p>
+
+            <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Eletrificadores <strong className="text-white">Intelbras</strong> de alta potência
+              </li>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Concertinas em aço galvalume (resistência à corrosão)
+              </li>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Monitoramento inteligente: disparo imediato em caso de corte
+              </li>
             </ul>
           </div>
 

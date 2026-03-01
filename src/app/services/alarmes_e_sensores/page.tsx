@@ -55,21 +55,28 @@ export default function SensoresEAlarmesPage() {
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className={`${styles.animateIn} text-center lg:text-left`}>
+         <div className={`${styles.animateIn} text-center lg:text-left`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
               Proteção Invisível e <span className="text-(--color-secondary)">Monitoramento Ativo</span>
             </h1>
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-              Não espere a invasão acontecer. Nossos sensores de barreira e alarmes de alta precisão criam um escudo tecnológico que identifica qualquer movimentação suspeita em milissegundos, enviando alertas em tempo real direto para o seu smartphone.
-           </p>
-            <ul className={`${styles.checks}`}>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Barreira Infravermelha Ativa</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Sensores de Presença Pet-Immune</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Alerta em Tempo Real no Celular</li>
+            
+            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+              A segurança real começa antes da intrusão. Trabalhamos com a linha profissional de sensores e alarmes <strong className="text-white">Intelbras</strong>, desenvolvidos para criar um perímetro de proteção indetectável. Nossos sistemas utilizam tecnologia de barreira infravermelha de alta precisão e sensores pet-immune, que garantem que sua casa esteja sempre vigiada sem alarmes falsos causados por animais ou vegetação. Com alertas instantâneos no seu smartphone, você tem o controle total do seu patrimônio na palma da mão, onde quer que você esteja.
+            </p>
+
+            <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Tecnologia <strong className="text-white">Intelbras</strong> de alta sensibilidade
+              </li>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Barreiras Infravermelhas (Proteção Perimetral)
+              </li>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Notificações Push: Alertas instantâneos no celular
+              </li>
             </ul>
-          </div>
-                    
-          {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
+          </div>   
+                  {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
           <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
             
             {/* FOTO 1 - Âncora Vertical */}

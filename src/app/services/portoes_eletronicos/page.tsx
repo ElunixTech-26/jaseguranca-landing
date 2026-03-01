@@ -51,20 +51,33 @@ export default function PortaoPage(){
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className={styles.animateIn}>
+           <div className={`${styles.animateIn} text-center lg:text-left`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Abertura <span className="text-(--color-secondary)">Ultra-Rápida</span> para sua total segurança.
+              Abertura <span className="text-(--color-secondary)">Ultra-Rápida</span> para sua proteção.
             </h1>
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-              Não fique vulnerável esperando seu portão abrir. Instalamos motores de alta performance que garantem rapidez, durabilidade e o controle total do acesso à sua residência na palma da mão.   
-           </p>
-           <ul className="space-y-4 text-white font-medium">
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Abertura em até 4 segundos</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Controles Criptografados (Anti-clonagem)</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Sistema de No-break integrado</li>
+            
+            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+              O momento mais perigoso do seu dia é quando você para o carro para esperar o portão abrir. 
+              Nós eliminamos essa vulnerabilidade instalando a linha de motores de alta performance da <strong className="text-white">PPA</strong>. 
+              Líder em tecnologia de velocidade e durabilidade, a PPA oferece o sistema JetFlex, que garante que você entre 
+              em casa em até 4 segundos, reduzindo drasticamente seu tempo de exposição na rua. Aliamos a robustez mecânica 
+              desta gigante do mercado com nossa instalação técnica impecável, garantindo que seu acesso seja não apenas 
+              ágil, mas ininterrupto, mesmo em dias de chuva ou falta de energia.
+            </p>
+
+            <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Motores <strong className="text-white">PPA JetFlex</strong>: Abertura em até 4 segundos
+              </li>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Segurança Total: Controles anti-clonagem (Rolling Code)
+              </li>
+              <li className="flex gap-3 items-center">
+                <span className="text-(--color-secondary)">✔</span> Autonomia garantida: Sistema com bateria de backup
+              </li>
             </ul>
           </div>
-        
+                  
           <div className={`${styles.animateIn} relative h-[450px] rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
                style={{ animationDelay: '0.2s' }}>
             <Image 

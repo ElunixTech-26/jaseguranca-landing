@@ -20,7 +20,7 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
     e.preventDefault();
     
     // Configuração do WhatsApp
-    const numeroTelefone = "5551994089100"; 
+    const numeroTelefone = "555183490527"; 
     const mensagem = `Olá, vim pelo site! Meu nome é ${formData.nome}, moro em ${formData.cidade}. Gostaria de um orçamento para ${formData.servico}.`;
     
     const url = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
@@ -32,20 +32,28 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
       <div className={styles.container}>
         
         {/* Conteúdo */}
-        <div className={styles.content}>
-          <h2 className="text-3xl md:text-5xl font-bold text-white font-poppins mb-6">
-            Pronto para elevar o nível de <span className="text-(--color-secondary)">segurança</span> do seu ambiente?
-          </h2>
-          <p className="text-(--color-text-secondary) text-lg mb-8">
-            Consiga mais conforto e praticidade no seu dia a dia com uma instalação feita por um especialista.
-          </p>
-          
-          <div className={styles.benefits}>
-            <span>✓ Atendimento Rápido</span>
-            <span>✓ Orçamento Gratuito</span>
-            <span>✓ Garantia de Serviço</span>
-          </div>
+       <div className={styles.content}>
+        <h2 className="text-3xl md:text-5xl font-bold text-white font-poppins mb-6">
+          Pronto para blindar seu patrimônio com a <span className="text-(--color-secondary)">J.A Segurança</span>?
+        </h2>
+        
+        <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          Não deixe a segurança da sua família ou empresa para depois. Agende uma visita técnica 
+          especializada e descubra como nossas soluções inteligentes podem transformar seu ambiente.
+        </p>
+        
+        <div className={styles.benefits}>
+          <span className="flex items-center gap-2">
+            <span className="text-(--color-secondary)">✔</span> Vistoria Técnica Gratuita
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="text-(--color-secondary)">✔</span> Instalação Profissional (Intelbras/PPA)
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="text-(--color-secondary)">✔</span> Suporte e Garantia Dedicada
+          </span>
         </div>
+      </div>
 
         {/* Formulário */}
         <div className={styles.formWrapper}>

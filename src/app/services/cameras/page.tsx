@@ -54,18 +54,30 @@ export default function CamerasPage() {
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`${styles.animateIn} text-center lg:text-left`}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Monitoramento <span className="text-(--color-secondary)">Inteligente</span>
-            </h1>
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-              Instalamos sistemas de CFTV com diversas opções de escolha. Temos câmeras com reconhecimento facial, visão noturna, detecção de movimento humana e opções de câmeras com inteligência artificial. Tudo fácil e rápido na palma da sua mão.   
-           </p>
-            <ul className={`${styles.checks}`}>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Resolução 4K Ultra HD</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Visão Noturna</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Inteligência Artificial</li>
-            </ul>
-          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
+            Monitoramento <span className="text-(--color-secondary)">Inteligente</span> e Ativo
+          </h1>
+          
+          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+            Transforme a segurança do seu patrimônio com a liderança tecnológica da <strong className="text-white">Intelbras</strong>. 
+            Nossas soluções de CFTV vão muito além da gravação comum: entregamos inteligência artificial avançada para detecção humana precisa, 
+            evitando alarmes falsos, e visão noturna colorida mesmo em ambientes de baixa luminosidade. Tudo integrado 
+            ao ecossistema Intelbras, garantindo que você tenha acesso rápido, estável e seguro às suas imagens 
+            diretamente pelo seu celular, 24 horas por dia.
+          </p>
+
+          <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Equipamentos <strong className="text-white">Intelbras</strong> de alta performance
+            </li>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Imagens em 4K Ultra HD com nitidez absoluta
+            </li>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Detecção por IA: alertas reais em tempo real
+            </li>
+          </ul>
+        </div>
           
           {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
           <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">

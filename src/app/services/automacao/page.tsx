@@ -56,19 +56,32 @@ export default function CamerasPage() {
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className={`${styles.animateIn} text-center lg:text-left`}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Sua casa ou empresa, <span className="text-(--color-secondary)">sob seu comando.</span>
-            </h1>
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed">
-              Transforme seu ambiente em um ecossistema inteligente. De comandos de voz à automação completa de ar-condicionado, iluminação e portões, a J.A Segurança integra tudo para que você tenha controle total, conforto e economia de energia com um simples toque ou comando de voz. 
-           </p>
-            <ul className={`${styles.checks}`}>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Integração Alexa e Google Assistente</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Controle Total via Smartphone</li>
-              <li className="flex gap-3 items-center"><span className="text-(--color-secondary)">✔</span> Economia Real de Energia</li>
-            </ul>
-          </div>
+         <div className={`${styles.animateIn} text-center lg:text-left`}>
+          <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
+            Sua casa ou empresa, <span className="text-(--color-secondary)">sob seu comando.</span>
+          </h1>
+          
+          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+            Eleve o patamar do seu ambiente com a inteligência que antecipa suas necessidades. 
+            Na J.A Segurança, projetamos ecossistemas automatizados onde a iluminação, o clima e os acessos 
+            se ajustam automaticamente à sua rotina. Através de uma integração fluida com <strong className="text-white">Alexa e Google Assistente</strong>, 
+            transformamos comandos de voz em conforto absoluto e economia inteligente. 
+            Seja para criar o "clima de cinema" na sala de estar ou gerenciar a eficiência energética de uma empresa inteira, 
+            nossas soluções colocam o controle total na palma da sua mão, onde quer que você esteja.
+          </p>
+
+          <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Ecossistema unificado: Controle centralizado e intuitivo
+            </li>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Automação inteligente: Cenas personalizadas para cada momento
+            </li>
+            <li className="flex gap-3 items-center">
+              <span className="text-(--color-secondary)">✔</span> Eficiência e Economia: Redução real de custos com gestão energética
+            </li>
+          </ul>
+        </div>
           
           {/*Foto 1 (Principal): Uma sala de estar moderna com iluminação aconchegante (que você automatizou).
             Foto 2 (Detalhe): Um close de um smartphone com o App de automação aberto (mostrando o controle do Ar ou da TV).
