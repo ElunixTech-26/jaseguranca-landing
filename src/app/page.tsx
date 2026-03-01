@@ -4,6 +4,7 @@ import Faq from "@/components/faq/faq";
 import Hero from "@/components/hero/hero";
 import Services from "@/components/services/service";
 import Sobre from "@/components/sobre/sobre";
+import Testimonials from "@/components/testimonials/testimonials";
 
 export default function Home(){
 
@@ -13,7 +14,7 @@ export default function Home(){
       <Authority />
       <Services />
       <Sobre />
-      {/* testimonials & partnerships */}
+      {/* <Testimonials /> */}
       <Cta servicoPadrao="nenhum" />
       <Faq />
     </>

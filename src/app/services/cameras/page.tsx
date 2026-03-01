@@ -38,11 +38,6 @@ const passosInstalacao = [
     numero: "04",
     titulo: "Configuração e Treinamento",
     descricao: "Configuramos o acesso no seu celular e ensinamos você a monitorar tudo em tempo real."
-  },
-  {
-    numero: "05",
-    titulo: "Término e cobrança",
-    descricao: "Depois do serviço concluido, o técnico irá olhar para ti e dizer: NÃAAAAAAAAAO PORQUE EU SUBO NO TELHADO E COBRO 5 PILA."
   }
 ];
 
