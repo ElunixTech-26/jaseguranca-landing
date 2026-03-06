@@ -34,7 +34,6 @@
   text-align: center;
 }
 
-
 .content p {
   animation-delay: 0.2s;
 }
@@ -61,21 +60,25 @@
 
 .secondaryButton {
   padding: 12px 32px;
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   border-radius: 99px;
   font-family: var(--font-inter);
-  font-weight: 600;
   text-transform: uppercase;
   font-size: 0.875rem;
+  letter-spacing: .05rem;
   transition: all 0.3s ease;
   background: transparent;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: var(--font-inter-next);
 }
 
 .secondaryButton:hover {
-  background-color: white;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.95);
 }
 
 @media (min-width: 768px) {
