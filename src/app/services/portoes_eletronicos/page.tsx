@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Portôes ultra-rápidos - J.A Segurança Eletrônica",
     description: "Sistemas de portões com alta velocidade e maior segurança para o ambiente.",
-    images: ["/logo-base-letter-jpeg.png"],
+    images: ["/illustrative/portao-card.png"],
   },
 };
 
@@ -47,7 +47,6 @@ export default function PortaoPage(){
           <Breadcrumbs />
       </div>
 
-
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -77,15 +76,45 @@ export default function PortaoPage(){
               </li>
             </ul>
           </div>
-                  
-          <div className={`${styles.animateIn} relative h-[450px] rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
-               style={{ animationDelay: '0.2s' }}>
-            <Image 
-              src="/motor-portao.jpeg" 
-              alt="Instalação de Portão Eletrônico" 
-              fill 
-              className="object-cover"
-            />
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
+          
+            <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[550px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.2s' }}>
+
+              <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="100%" 
+                  height="auto" 
+                  controls // Mostra os botões de play/pause
+                  className="h-full w-full object-cover rounded-3xl border border-(--color-border-subtle)"
+                >
+                <source src="/videos/video-portao-eletronico-2.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
+
+            <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.6s' }}>
+                <Image    
+                src="/motor-portao-1.jpeg" 
+                alt="Foto de Motor do portão eletrônico" 
+                fill 
+                className="object-cover object-center hover:scale-105 transition-transform duration-500"/>
+            </div> 
+          
+            <div className={`${styles.animateIn} md:block hidden lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.8s' }}>
+                <Image    
+                src="/foto-portao-area.jpeg" 
+                alt="Foto conceitual da área de um portão eletrônico" 
+                fill 
+                className="object-cover object-center hover:scale-105 transition-transform duration-500"/>
+            </div> 
+          
           </div>
 
         </div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sua Casa Inteligente - J.A Segurança",
     description: "Conforto, economia e tecnologia sob seu comando.",
-    images: ["/automacao-card.png"],
+    images: ["/illustrative/automacao-card.png"],
   },
 };
 
@@ -91,37 +91,13 @@ export default function CamerasPage() {
             <div className={`${styles.animateIn} relative lg:col-span-15 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
               <Image 
-                src="/automacao-card.png" 
-                alt="Instalação em altura" 
+                src="/illustrative/automacao-img.png" 
+                alt="Imagem conceitual de automação em residencial" 
                 fill 
                 priority
-                className="object-cover hover:scale-105 transition-transform duration-500"
+                className="object-fill hover:scale-105 transition-transform duration-500"
               />
             </div>
-{/* 
-         
-            <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[250px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
-                style={{ animationDelay: '0.2s' }}>
-              <Image 
-                src="/cameras-intelbras.jpeg" 
-                alt="Monitoramento Profissional" 
-                fill 
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-
-          
-            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
-                style={{ animationDelay: '0.6s' }}>
-              <Image 
-                src="/cameras-intelbras-2.png" 
-                alt="Câmeras de alta tecnologia" 
-                fill 
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div> */}
-
-
           </div>
           
         </div>

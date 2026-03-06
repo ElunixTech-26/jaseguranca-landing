@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cercas e Concertinas - J.A Segurança Eletrônica",
     description: "Crie uma barreira intransponível no seu patrimônio.",
-    images: ["/banner-cerca-eletrica.jpg"],
+    images: ["/illustrative/cercas-card.png"],
   },
 };
 
@@ -95,24 +95,12 @@ export default function CercasPage(){
                 style={{ animationDelay: '0.4s' }}>
               <Image 
                 src="/cerca-eletronica-1.jpeg" 
-                alt="Cerca Eletrônica & Concertina instalada" 
+                alt="Cerca Eletrônica instalada" 
                 fill 
                 priority
                  className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-            {/* <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
-                style={{ animationDelay: '0.4s' }}>
-              <Image 
-                src="/cerca-eletronica-1.jpeg" 
-                alt="Cerca Eletrônica & Concertina instalada" 
-                fill 
-                priority
-                className="object-cover object-top" 
-              />
-            </div> */}
-
           </div>
 
         </div>

@@ -54,8 +54,8 @@ export default function Sobre() {
         >
           <div className="relative h-[500px] rounded-3xl overflow-hidden border-2 border-(--color-border-subtle) shadow-2xl">
             <Image 
-              src="/leo-cartoon.png" 
-              alt="Profissional da J.A Segurança" 
+              src="/illustrative/leo-cartoon.png" 
+              alt="Profissional da J.A Segurança - Leandro da Silveira" 
               fill 
               className="object-fill object-top"
             />

@@ -22,7 +22,7 @@ export default function Header() {
             {/* Logo com Next Image */}
             <Link href="/" className="flex items-center gap-2 z-[1001]">
                 <Image 
-                    src="/logo-base-png.png" 
+                    src="/logos/logo-base-png.png" 
                     alt="Logo J.A Segurança" 
                     width={60} 
                     height={60} 

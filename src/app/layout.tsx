@@ -4,7 +4,6 @@ import { Inter, Poppins, Montserrat } from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
-import Hero from "@/components/hero/hero";
 
 const inter = Inter({
   subsets: ['latin'],

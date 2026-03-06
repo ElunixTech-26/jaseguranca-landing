@@ -18,7 +18,7 @@ export default function Footer() {
         <div className={styles.column}>
           <div className="flex items-center gap-2 mb-4">
             <Image 
-              src="/logo-base-png.png" 
+              src="/logos/logo-base-png.png" 
               alt="Logo J.A Segurança" 
               width={40} 
               height={40} 
@@ -85,7 +85,7 @@ export default function Footer() {
             </li>
             <li className={`flex items-center gap-1 ${styles.socialLinks}`}>
                 <BsEnvelopeFill className={`text-(--color-secondary) ${styles.socialIcon}`} />
-                contato@jaseguranca.com
+                <Link href={"mailto:jaseg0722@gmail.com"}>E-mail comercial</Link>
             </li>
           </ul>
         </div>

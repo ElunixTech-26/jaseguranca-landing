@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Alarme e Proteção Inteligente - J.A Segurança",
     description: "Detecção imediata de invasões com tecnologia de ponta.",
-    images: ["/logo-base-letter-jpeg.png"],
+    images: ["/illustrative/sensor-e-alarme-card.png"],
   },
 };
 
@@ -82,36 +82,41 @@ export default function SensoresEAlarmesPage() {
             {/* FOTO 1 - Âncora Vertical */}
             <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[550px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.2s' }}>
-              <Image 
-                src="/sensores-1.jpeg" 
-                alt="Instalação em altura" 
-                fill 
-                priority
-                className="object-cover hover:scale-105 transition-transform duration-500 object-top"
-              />
-            </div>
 
-            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+               <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  poster="/sensor-foto-1"
+                  width="100%" 
+                  height="auto" 
+                  controls // Mostra os botões de play/pause
+                  className="h-full w-full object-cover rounded-3xl border border-(--color-border-subtle)"
+                >
+                <source src="/videos/video-alarme-2.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div> 
+            <div className={`${styles.animateIn} md:block relative lg:col-span-5 lg:row-span-1 h-[600px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
               <Image 
-                src="/sensor-e-alarme-card.png" 
-                alt="Câmeras de alta tecnologia" 
+                src="/sensor-foto-2.jpeg" 
+                alt="Sensor instalado na parede" 
                 fill 
                 className="object-center object-fill hover:scale-105 transition-transform duration-500"
               />
             </div>
 
-            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[550px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.6s' }}>
               <Image 
-                src="/sensor-e-alarme-card.png" 
-                alt="Câmeras de alta tecnologia" 
+                src="/sensores-5.jpeg" 
+                alt="Sensor instalado na parede" 
                 fill 
-                className="object-center object-fill hover:scale-105 transition-transform duration-500"
+                className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-
           </div>
           
         </div>

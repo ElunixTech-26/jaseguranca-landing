@@ -8,7 +8,7 @@ export default function Hero() {
      {/* IMAGEM DESKTOP (Paisagem)*/}
       <div className="hidden md:block">
         <Image 
-          src="/hero-desktop.png" 
+          src="/illustrative/hero-desktop.png" 
           alt="Sistema de Monitoramento J.A Segurança"
           fill
           priority
@@ -19,7 +19,7 @@ export default function Hero() {
       {/* IMAGEM MOBILE (De pé) */}
       <div className="block md:hidden">
         <Image 
-          src="/hero-cellphone.png"
+          src="/illustrative/hero-cellphone.png"
           alt="Sistema de Monitoramento J.A Segurança"
           fill
           priority

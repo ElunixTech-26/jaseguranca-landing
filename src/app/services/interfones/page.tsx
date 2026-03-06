@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Comunicação e Acesso Seguro - J.A Segurança",
     description: "Identifique visitantes e abra portões de qualquer lugar.",
-    images: ["/footprint-card.png"],
+    images: ["/illustrative/footprint-card.png"],
   },
 };
 
@@ -83,7 +83,6 @@ export default function InterfonesPage() {
           {/* Grid Otimizado: auto-rows no mobile para não achatar, h fixo só no desktop */}
           <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
             
-            {/* FOTO 1 - Âncora Vertical */}
             <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.2s' }}>
                 <video 
@@ -91,7 +90,7 @@ export default function InterfonesPage() {
                   loop
                   muted
                   playsInline
-                  poster="/footprint-card.png"
+                  poster="/illustrative/footprint-card.png"
                   width="100%" 
                   height="auto" 
                   controls // Mostra os botões de play/pause
@@ -100,11 +99,8 @@ export default function InterfonesPage() {
                 <source src="/videos/video-porteiro.mp4" type="video/mp4" />
                 Seu navegador não suporta vídeos.
               </video>
-
-
             </div>
 
-            {/* FOTO 3 - Inferior Direita - desktop */}
             <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
               <Image 

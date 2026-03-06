@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Monitoramento Inteligente - J.A Segurança Eletrônica",
     description: "Sistemas de alta performance com acesso pelo celular.",
-    images: ["/logo-base-letter-jpeg.png"], // Imagem que aparece no compartilhamento
+    images: ["/illustrative/service-camera-card.png"], // Imagem que aparece no compartilhamento
   },
 };
 
@@ -87,7 +87,7 @@ export default function CamerasPage() {
                 style={{ animationDelay: '0.4s' }}>
               <Image 
                 src="/camera-poste.png" 
-                alt="Instalação em altura" 
+                alt="Câmera instalada em um poste." 
                 fill 
                 priority
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -95,28 +95,26 @@ export default function CamerasPage() {
             </div>
 
             {/* FOTO 2 - Superior Direita */}
-            <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[250px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.2s' }}>
               <Image 
-                src="/cameras-intelbras.jpeg" 
-                alt="Monitoramento Profissional" 
+                src="/foto-camera-3.jpeg" 
+                alt="Câmera intelbras instalada no alto" 
                 fill 
-                className="object-cover hover:scale-105 transition-transform duration-500"
+                className="object-cover object-center hover:scale-105 transition-transform duration-500"
               />
             </div>
 
             {/* FOTO 3 - Inferior Direita - desktop */}
-            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} md:block relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.6s' }}>
               <Image 
                 src="/cameras-intelbras-2.png" 
-                alt="Câmeras de alta tecnologia" 
+                alt="Câmeras intelbras na embalagem" 
                 fill 
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-
-
           </div>
           
         </div>

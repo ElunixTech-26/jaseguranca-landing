@@ -6,43 +6,38 @@ const services = [
   {
     title: "Câmeras de Monitoramento",
     description: "Sistemas CFTV IP com acesso remoto e inteligência artificial.",
-    image: "/service-camera-card.png",
+    image: "/illustrative/service-camera-card.png",
     url: "services/cameras"
   },
-  // {
-  //   title: "Alarmes Inteligentes",
-  //   description: "Sensores de presença e pânico com monitoramento via aplicativo.",
-  //   image: "/escudo.png"
-  // },
   {
     title: "Portões Eletrônicos",
     description: "Abertura ultrarrápida com máxima segurança: tecnologia que protege e agiliza seu dia.",
-    image: "/portao-card.png",
+    image: "/illustrative/portao-card.png",
     url: "services/portoes_eletronicos"
   },
 
   {
     title: "Cercas Eletrônicas e Concertinas",
     description: "Proteção perimetral de alta voltagem para máxima segurança.",
-    image: "/cercas-card.png",
+    image: "/illustrative/cercas-card.png",
     url: "services/cercas_eletronicas"
   },
   {
     title: "Interfones e Porteiros Eletrônicos",
     description: "Comunicação clara e abertura remota de portões. Sistemas analógicos e digitais com vídeo HD para identificação segura de visitantes. Praticidade e segurança no seu acesso.",
-    image: "/footprint-card.png",
+    image: "/illustrative/footprint-card.png",
     url: "services/interfones"
   },
   {
     title: "Sensores e Alarmes Inteligentes",
     description: "Proteção invisível com tecnologia de barreira infravermelha. Detecção precisa de movimento com envio de alertas em tempo real. Segurança total, dia e noite.",
-    image: "/sensor-e-alarme-card.png",
+    image: "/illustrative/sensor-e-alarme-card.png",
     url: "services/alarmes_e_sensores"
   },
   {
     title: "Automações Residênciais",
     description: "Transforme sua rotina com ambientes automatizados. Controle iluminação, ar-condicionado, TV e portões por voz ou smartphone. Conforto e economia sob seu comando.",
-    image: "/automacao-card.png",
+    image: "/illustrative/automacao-card.png",
     url: "services/automacao"
   }
 ];
