@@ -14,7 +14,7 @@ export default function Home(){
       <Authority />
       <Services />
       <Sobre />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Cta servicoPadrao="nenhum" />
       <Faq />
     </>
