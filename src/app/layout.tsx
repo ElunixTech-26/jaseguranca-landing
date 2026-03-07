@@ -25,7 +25,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "J.A Segurança Eletrônica",
-  description: "Descrição a definir...",
+  description: "J.A Segurança Eletrônica: Especialistas em CFTV, alarmes, cercas elétricas e automação residencial em Canoas. Proteja seu patrimônio com tecnologia de ponta e instalação profissional. Solicite um orçamento gratuito!",
   manifest: "/manifest.json",
   icons: {
     icon: "/favicon.ico",
