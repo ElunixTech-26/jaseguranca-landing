@@ -34,6 +34,9 @@ export const metadata: Metadata = {
    openGraph: {
     images: ["/illustrative/leo-cartoon.png"], 
   },
+  verification: {
+    google: 'iL8GGNdY0-dc9ScKKmxaftJsOzKpaORLP1wbRZFuJEU'
+  }
 };
 
 export default function RootLayout({
