@@ -14,9 +14,9 @@ const empresasParceiras = [
     alt: "Logo Kaza Sushi"
   },
   {
-    logo: "logos/logo-freios-canoenses.jpg",
-    url: "https://freioscanoensers.com.br/",
-    alt: "Logo Freios Canoenses"
+    logo: "logos/logo-dtg.pdf",
+    url: "https://dtgconsultoriaimobiliaria.com.br",
+    alt: "Logo DTG Imobiliaria"
   },
   {
     logo: "logos/logo-gboex.png",
