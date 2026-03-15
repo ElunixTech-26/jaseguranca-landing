@@ -78,27 +78,16 @@ export default function CercasPage(){
           </div>
 
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
+          <div className="grid grid-cols-1 gap-4 h-auto lg:h-[550px] w-full">
 
             <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
                 style={{ animationDelay: '0.2s' }}>
               <Image 
-                src="/cerca-concertina.png" 
+                src="/cercas-eletronicas.png" 
                 alt="Cerca Eletrônica & Concertina instalada" 
                 fill 
                 priority
-                 className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-
-            <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-2 h-[550px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`} 
-                style={{ animationDelay: '0.4s' }}>
-              <Image 
-                src="/cerca-eletronica-1.jpeg" 
-                alt="Cerca Eletrônica instalada" 
-                fill 
-                priority
-                 className="object-cover hover:scale-105 transition-transform duration-500"
+                 className="object-fill hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

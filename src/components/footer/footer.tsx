@@ -77,7 +77,7 @@ export default function Footer() {
             </li>
             <li className={`flex items-center gap-1 ${styles.socialLinks}`}>
                 <BsInstagram className={`text-(--color-secondary) ${styles.socialIcon}`} />
-                <Link href={"https://www.instagram.com/j.a.seguranca.eletronica/"}>j.a.seguranca.eletronica</Link>
+                <Link href={"https://www.instagram.com/j.a.segurancars/"}>j.a.seguranca.eletronica</Link>
             </li>
             <li className={`flex items-center gap-1 ${styles.socialLinks}`}>
                 <BsWhatsapp className={`text-(--color-secondary) ${styles.socialIcon}`} />
