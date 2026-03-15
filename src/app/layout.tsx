@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description: "J.A Segurança Eletrônica: Especialistas em CFTV, alarmes, cercas elétricas e automação residencial em Canoas. Proteja seu patrimônio com tecnologia de ponta e instalação profissional. Solicite um orçamento gratuito!",
   manifest: "/manifest.json",
   icons: {
-    icon: "/favicon.ico",
+    icon: ["/icon1.png", "icon0.svg", "/favicon.ico"],
     apple: "/apple-icon.png"
   },
    openGraph: {
