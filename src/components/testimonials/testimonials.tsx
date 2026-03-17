@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useRef } from 'react'; 
+import { useRef } from 'react';
 
 const empresasParceiras = [
   {
@@ -77,25 +77,25 @@ export default function Testimonials() {
 
   return (
     <section className="py-20 bg-black border-t border-(--color-border-subtle)">
-      
+
       {/* Logos*/}
       <div className="mb-20">
         <p className=" text-center text-sm uppercase tracking-widest text-(--color-text-muted) mb-10">
           Confiam na J.A Segurança
         </p>
         <div className="flex overflow-hidden">
-          <motion.div 
+          <motion.div
             className="flex gap-16"
             animate={{ x: ["0%", "-50%"] }}
             transition={{ duration: 20, ease: "linear", repeat: Infinity }}
           >
-            {[...empresasParceiras, ...empresasParceiras].map((empresas, i) => 
+            {[...empresasParceiras, ...empresasParceiras].map((empresas, i) =>
                 <a
-                  key={i} 
+                  key={i}
                   href={`${empresas.url}`}
                   target='_blank'
                   rel="noopener noreferrer"
-                  className="opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 w-32 h-16 flex items-center shrink-0"
+                  className="transition-opacity w-32 h-16 flex items-center shrink-0"
                 >
                   <img src={`/${empresas.logo}`} alt={`${empresas.alt}`} className="max-h-full object-contain" />
                 </a>
@@ -113,26 +113,26 @@ export default function Testimonials() {
 
         {/* 4. Botões de Navegação (Apenas Desktop) */}
         <div className="hidden md:flex gap-4 absolute top-0 right-6">
-          <button 
+          <button
             onClick={() => scroll('left')}
             className="p-3 rounded-full border border-(--color-border-subtle) text-white hover:bg-(--color-secondary) transition-colors"
             >
             ←
           </button>
-          <button 
+          <button
             onClick={() => scroll('right')}
             className="p-3 rounded-full border border-(--color-border-subtle) text-white hover:bg-(--color-secondary) transition-colors"
             >
             →
           </button>
         </div>
-    
+
       <div
         ref={scrollRef}
         className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 px-4">
         {testimonials.map((i) => (
-          <div  
-          key={i.id} 
+          <div
+          key={i.id}
           className="min-w-[85vw] md:min-w-[400px]  md:max-w-[400px] snap-center p-8 bg-(--color-dark-surface) rounded-3xl border border-(--color-border-subtle) flex flex-col hover:border-(--color-secondary)/50 transition-colors duration-500"
           >
             {/* Conteúdo do Card (Estrelas, Comentário, Avatar) */}
@@ -140,7 +140,7 @@ export default function Testimonials() {
             <p className="text-(--color-text-secondary) italic mb-6 flex-1">
               "{i.comentario}"
             </p>
-            
+
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 shrink-0 rounded-full bg-(--color-secondary)/20 border border-(--color-secondary)/30 flex items-center justify-center text-(--color-secondary) font-bold">
                 {i.nome.split(' ')[0][0]}{i.nome.split(' ').slice(-1)[0][0]}
@@ -157,7 +157,7 @@ export default function Testimonials() {
      </div>
 
     </div>
-      
+
     </section>
   );
 }
