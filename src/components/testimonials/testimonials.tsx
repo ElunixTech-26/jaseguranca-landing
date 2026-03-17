@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useRef } from 'react'; 
 
 const empresasParceiras = [
   {
@@ -30,13 +31,56 @@ const empresasParceiras = [
   }
 ]
 
+const testimonials = [
+  {
+    id: 1,
+    nome: 'Jairo Bueno',
+    empresa: '',
+    comentario: 'Usei os serviços dessa empresa para instalação de Câmeras, Alarme e Automação Residencial. Recomendo muito! Eles gabaritaram todos os requisitos que esperamos quando contratamos um serviço: Empatia, compromisso e agilidade!'
+  },
+  {
+    id: 2,
+    nome: 'Bruno Tavares',
+    empresa: '',
+    comentario: 'Contratei os serviços da Empresa para instalação de câmeras e alarme comercial, serviço de alta qualidade com profissionais sérios e principalmente cumprindo os prazos.'
+  },
+  {
+    id: 3,
+    nome: 'Flávia Maria Alves',
+    empresa: '',
+    comentario: 'Profissional nota 10! Melhor atendimento e melhores valores! Já o recomendo faz tempo e continuo indicando!!!'
+  },
+  {
+    id: 4,
+    nome: 'Lucas Terribele',
+    empresa: '',
+    comentario: 'Muito bem atendido como sempre! Serviço de qualidade!'
+  }
+]
+
 export default function Testimonials() {
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  //função de rolar
+  const scroll = (direction: 'left' | 'right') =>{
+    if(scrollRef.current){
+      const {current} = scrollRef;
+      const scrollAmount = 424; //pixels que serão scrollados
+
+      current.scrollBy({
+        left: direction == 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="py-20 bg-black border-t border-(--color-border-subtle)">
       
       {/* Logos*/}
       <div className="mb-20">
-        <p className="text-center text-sm uppercase tracking-widest text-(--color-text-muted) mb-10">
+        <p className=" text-center text-sm uppercase tracking-widest text-(--color-text-muted) mb-10">
           Confiam na J.A Segurança
         </p>
         <div className="flex overflow-hidden">
@@ -60,28 +104,60 @@ export default function Testimonials() {
         </div>
       </div>
 
-      {/* Testimonials */}
-      {/* <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white text-center mb-16">O que dizem sobre nossa entrega</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="p-8 bg-(--color-dark-surface) rounded-3xl border border-(--color-border-subtle)">
-              <div className="text-(--color-secondary) mb-4 text-2xl">★★★★★</div>
-              <p className="text-(--color-text-secondary) italic mb-6">
-                "Excelente profissionalismo. A instalação foi rápida, organizada e a equipe explicou todo o sistema de segurança. Dormimos muito mais tranquilos agora."
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gray-700"></div>
-                <div>
-                  <h4 className="text-white font-bold">Nome do Cliente</h4>
-                  <span className="text-xs text-(--color-text-muted)">Empresa/Residência</span>
-                </div>
+
+     <div className="max-w-7xl mx-auto px-6 relative">
+
+        <p className="text-center text-sm uppercase tracking-widest text-(--color-text-muted) mb-10">
+          O que dizem nossos clientes
+        </p>
+
+        {/* 4. Botões de Navegação (Apenas Desktop) */}
+        <div className="hidden md:flex gap-4 absolute top-0 right-6">
+          <button 
+            onClick={() => scroll('left')}
+            className="p-3 rounded-full border border-(--color-border-subtle) text-white hover:bg-(--color-secondary) transition-colors"
+            >
+            ←
+          </button>
+          <button 
+            onClick={() => scroll('right')}
+            className="p-3 rounded-full border border-(--color-border-subtle) text-white hover:bg-(--color-secondary) transition-colors"
+            >
+            →
+          </button>
+        </div>
+    
+      <div
+        ref={scrollRef}
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 px-4">
+        {testimonials.map((i) => (
+          <div  
+          key={i.id} 
+          className="min-w-[85vw] md:min-w-[400px]  md:max-w-[400px] snap-center p-8 bg-(--color-dark-surface) rounded-3xl border border-(--color-border-subtle) flex flex-col hover:border-(--color-secondary)/50 transition-colors duration-500"
+          >
+            {/* Conteúdo do Card (Estrelas, Comentário, Avatar) */}
+            <div className="text-(--color-secondary) mb-4 text-2xl">★★★★★</div>
+            <p className="text-(--color-text-secondary) italic mb-6 flex-1">
+              "{i.comentario}"
+            </p>
+            
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 shrink-0 rounded-full bg-(--color-secondary)/20 border border-(--color-secondary)/30 flex items-center justify-center text-(--color-secondary) font-bold">
+                {i.nome.split(' ')[0][0]}{i.nome.split(' ').slice(-1)[0][0]}
+              </div>
+              <div>
+                <h4 className="text-white font-bold">{i.nome}</h4>
+                <span className="text-xs text-(--color-text-muted)">
+                  {i.empresa || 'Cliente J.A'}
+                </span>
               </div>
             </div>
-          ))}
-        </div>
-      </div> */}
+          </div>
+        ))}
+     </div>
+
+    </div>
+      
     </section>
   );
 }
