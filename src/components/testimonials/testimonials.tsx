@@ -28,7 +28,12 @@ const empresasParceiras = [
     logo: "logos/logo-sp-sports.png",
     url: "https://webarena.app/arena/sp-sports",
     alt: "Logo SP Sports"
-  }
+  },
+  {
+    logo: "logos/logo-posto-ipiranga-boqueirao.png",
+    url: "https://www.instagram.com/postoipirangaboqueirao?igsh=Zzl0c21zNG4zOTF4",
+    alt: "Posto Ipiranga Boqueirão"
+  },
 ]
 
 const testimonials = [

@@ -98,23 +98,13 @@ export default function SensoresEAlarmesPage() {
                 Seu navegador não suporta vídeos.
               </video>
             </div> 
-            <div className={`${styles.animateIn} md:block relative lg:col-span-5 lg:row-span-1 h-[600px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} md:block relative lg:col-span-5 lg:row-span-2 h-[600px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
               <Image 
-                src="/sensor-foto-2.jpeg" 
+                src="/sensor-foto-3.png" 
                 alt="Sensor instalado na parede" 
                 fill 
-                className="object-center object-fill hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-
-            <div className={`${styles.animateIn} md:block hidden relative lg:col-span-5 lg:row-span-1 h-[550px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
-                style={{ animationDelay: '0.6s' }}>
-              <Image 
-                src="/sensores-5.jpeg" 
-                alt="Sensor instalado na parede" 
-                fill 
-                className="object-cover hover:scale-105 transition-transform duration-500"
+                className="object-center object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
