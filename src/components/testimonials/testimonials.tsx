@@ -34,6 +34,11 @@ const empresasParceiras = [
     url: "https://www.instagram.com/postoipirangaboqueirao?igsh=Zzl0c21zNG4zOTF4",
     alt: "Posto Ipiranga Boqueirão"
   },
+  {
+    logo: "logos/logo-freios-canoense.jpeg",
+    url: "https://share.google/uCtcrzG5D57gvbOao",
+    alt: "Freios Canoense"
+  }
 ]
 
 const testimonials = [
