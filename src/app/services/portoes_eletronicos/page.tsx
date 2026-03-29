@@ -96,21 +96,21 @@ export default function PortaoPage(){
                 Seu navegador não suporta vídeos.
               </video>
             </div>
+          
+            <div className={`${styles.animateIn} md:block lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.8s' }}>
+                <Image    
+                src="/motor-portao-3.jpeg" 
+                alt="Foto conceitual da área de um portão eletrônico" 
+                fill 
+                className="object-fill hover:scale-105 transition-transform duration-500"/>
+            </div> 
 
             <div className={`${styles.animateIn} relative lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.6s' }}>
                 <Image    
                 src="/motor-portao-1.jpeg" 
                 alt="Foto de Motor do portão eletrônico" 
-                fill 
-                className="object-cover object-center hover:scale-105 transition-transform duration-500"/>
-            </div> 
-          
-            <div className={`${styles.animateIn} md:block hidden lg:col-span-5 lg:row-span-1 h-[450px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
-                style={{ animationDelay: '0.8s' }}>
-                <Image    
-                src="/foto-portao-area.jpeg" 
-                alt="Foto conceitual da área de um portão eletrônico" 
                 fill 
                 className="object-cover object-center hover:scale-105 transition-transform duration-500"/>
             </div> 
