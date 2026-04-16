@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
 export const metadata: Metadata = {
   title: "Sensores de Alarme e Barreira Infravermelha | J.A Segurança",
   description: "Proteja seu patrimônio com sistemas de alarme inteligentes e sensores de barreira. Monitoramento 24h, tecnologia de ponta e alertas no celular em Canoas.",
-  keywords: ["sistema de alarme", "sensor de barreira infravermelho", "alarme monitorado canoas", "segurança residencial", "detecção de movimento", "J.A Segurança"],
+  keywords: ["sistema de alarme em canoas", "sensor de barreira infravermelho", "alarme monitorado canoas", "segurança residencial", "detecção de movimento", "J.A Segurança"],
   openGraph: {
     title: "Alarme e Proteção Inteligente - J.A Segurança",
     description: "Detecção imediata de invasões com tecnologia de ponta.",
@@ -56,14 +56,25 @@ export default function SensoresEAlarmesPage() {
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
          <div className={`${styles.animateIn} text-center lg:text-left`}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Proteção Invisível e <span className="text-(--color-secondary)">Monitoramento Ativo</span>
-            </h1>
-            
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
-              A segurança real começa antes da intrusão. Trabalhamos com a linha profissional de sensores e alarmes <strong className="text-white">Intelbras</strong>, desenvolvidos para criar um perímetro de proteção indetectável. Nossos sistemas utilizam tecnologia de barreira infravermelha de alta precisão e sensores pet-immune, que garantem que sua casa esteja sempre vigiada sem alarmes falsos causados por animais ou vegetação. Com alertas instantâneos no seu smartphone, você tem o controle total do seu patrimônio na palma da mão, onde quer que você esteja.
-            </p>
+           <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
+            <span className="text-(--color-secondary)">Alarmes</span> em <span className="text-(--color-secondary)">Canoas</span>: Proteção Invisível e Monitoramento Ativo
+          </h1>
 
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            A segurança mais eficiente é aquela que age antes mesmo de qualquer tentativa de invasão. Com sistemas modernos de alarme, você cria uma camada de proteção inteligente que monitora continuamente seu ambiente, trazendo mais tranquilidade para o dia a dia.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Trabalhamos com instalação de alarmes em Canoas e região, utilizando equipamentos da <strong className="text-white">Intelbras</strong>, referência em tecnologia e confiabilidade. Nossos sistemas contam com sensores de alta precisão, incluindo barreiras infravermelhas e tecnologia pet-immune, evitando disparos falsos e garantindo um monitoramento mais eficiente.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Com os sistemas de alarme, qualquer tentativa de invasão é identificada imediatamente, gerando alertas em tempo real no seu smartphone. Isso permite uma resposta rápida e aumenta significativamente o nível de proteção de residências, empresas e condomínios.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+            Atendemos Canoas e toda a região metropolitana com projetos personalizados de segurança eletrônica, adaptados às necessidades de cada cliente. Entre em contato e descubra como manter seu patrimônio protegido com tecnologia e monitoramento constante.
+          </p>
             <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
               <li className="flex gap-3 items-center">
                 <span className="text-(--color-secondary)">✔</span> Tecnologia <strong className="text-white">Intelbras</strong> de alta sensibilidade

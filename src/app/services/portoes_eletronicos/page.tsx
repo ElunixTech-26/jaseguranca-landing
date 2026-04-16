@@ -8,7 +8,7 @@ import Faq from "@/components/faq/faq";
 export const metadata: Metadata = {
   title: "Portões Eletrônicos | J.A Segurança",
   description: "Instalação profissional de Portões Eletrônicos, com alta velocidade de fechamento em Canoas e região. Proteja seu patrimônio com tecnologia de ponta.",
-  keywords: ["portões eletrônicos", "portão rápido", "segurança eletrônica canoas", "instalação de portões", "J.A Segurança", "canoas"],
+  keywords: ["portões eletrônicos em canoas", "portão rápido", "segurança eletrônica canoas", "instalação de portões em canoas", "J.A Segurança", "canoas"],
   openGraph: {
     title: "Portôes ultra-rápidos - J.A Segurança Eletrônica",
     description: "Sistemas de portões com alta velocidade e maior segurança para o ambiente.",
@@ -52,18 +52,24 @@ export default function PortaoPage(){
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
            <div className={`${styles.animateIn} text-center lg:text-left`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Abertura <span className="text-(--color-secondary)">Ultra-Rápida</span> para sua proteção.
+              Automação de Portões em <span className="text-(--color-secondary)">Canoas</span> com Abertura Rápida e Segura
             </h1>
-            
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
-              O momento mais perigoso do seu dia é quando você para o carro para esperar o portão abrir. 
-              Nós eliminamos essa vulnerabilidade instalando a linha de motores de alta performance da <strong className="text-white">PPA</strong>. 
-              Líder em tecnologia de velocidade e durabilidade, a PPA oferece o sistema JetFlex, que garante que você entre 
-              em casa em até 4 segundos, reduzindo drasticamente seu tempo de exposição na rua. Aliamos a robustez mecânica 
-              desta gigante do mercado com nossa instalação técnica impecável, garantindo que seu acesso seja não apenas 
-              ágil, mas ininterrupto, mesmo em dias de chuva ou falta de energia.
+
+            <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+              Um dos momentos mais vulneráveis do dia é quando você chega em casa ou na empresa e precisa aguardar a abertura do portão. Com a automação certa, esse processo se torna rápido, seguro e praticamente imperceptível, reduzindo sua exposição e trazendo mais tranquilidade na rotina.
             </p>
 
+            <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+              Desenvolvemos projetos de automação de portões em Canoas e região, utilizando motores de alta performance da <strong className="text-white">PPA</strong>, referência em tecnologia e durabilidade. Sistemas como o JetFlex permitem uma abertura ágil, garantindo eficiência no acesso mesmo em dias de chuva ou situações de instabilidade elétrica.
+            </p>
+
+            <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+              Além da praticidade, os portões automáticos oferecem mais controle sobre quem entra e sai do seu espaço, sendo ideais para residências, empresas e condomínios. A instalação é planejada de forma estratégica para garantir funcionamento contínuo e máxima vida útil dos equipamentos.
+            </p>
+
+            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+              Atendemos Canoas e toda a região metropolitana com soluções completas em segurança eletrônica. Entre em contato e descubra como tornar o acesso ao seu imóvel mais rápido, seguro e inteligente.
+            </p>
             <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
               <li className="flex gap-3 items-center">
                 <span className="text-(--color-secondary)">✔</span> Motores <strong className="text-white">PPA JetFlex</strong>: Abertura em até 4 segundos

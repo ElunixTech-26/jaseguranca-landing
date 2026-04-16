@@ -57,13 +57,13 @@ export default function Service() {
 
         <div className={styles.grid}>
           {services.map((service, index) => (
-            <div key={index} className={styles.serviceCard}>
+            <Link href={service.url} key={index} className={styles.serviceCard}>
               <div className={styles.imageWrapper}>
                 <Image 
                   src={service.image} 
                   alt={service.title} 
                   fill 
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500"
                 />
                 <div className={styles.overlay}></div>
               </div>
@@ -71,11 +71,9 @@ export default function Service() {
               <div className={styles.cardContent}>
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
                 <p className={styles.serviceDescription}>{service.description}</p>
-                <Link href={`${service.url}`}>
                   <button className={styles.learnMore}>Ver Detalhes</button>
-                </Link>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

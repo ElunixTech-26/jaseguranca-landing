@@ -9,7 +9,7 @@ import Faq from "@/components/faq/faq";
 export const metadata: Metadata = {
   title: "Câmeras de Segurança e Monitoramento 24h | J.A Segurança",
   description: "Instalação profissional de sistemas de CFTV, câmeras IP e acesso remoto em Canoas e região. Proteja seu patrimônio com tecnologia de ponta.",
-  keywords: ["câmeras de segurança", "monitoramento 24h", "segurança eletrônica canoas", "instalação cftv", "J.A Segurança"],
+  keywords: ["câmeras de segurança em canoas", "monitoramento 24h", "segurança eletrônica canoas", "instalação cftv canoas", "J.A Segurança"],
   // OpenGraph faz o link ficar bonito quando compartilhado no WhatsApp/Social
   openGraph: {
     title: "Monitoramento Inteligente - J.A Segurança Eletrônica",
@@ -55,15 +55,23 @@ export default function CamerasPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`${styles.animateIn} text-center lg:text-left`}>
           <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-            Monitoramento <span className="text-(--color-secondary)">Inteligente</span> e Ativo
+            Câmeras de Segurança em <span className="text-(--color-secondary)">Canoas</span>: Monitoramento Inteligente para o seu dia a dia
           </h1>
-          
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Ter visibilidade total do seu ambiente é um dos pilares de uma segurança eficiente. Com sistemas modernos de câmeras de segurança, você acompanha tudo o que acontece em tempo real, com mais controle e tranquilidade, seja em casa ou na sua empresa.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Desenvolvemos projetos de instalação de câmeras em Canoas e região, utilizando equipamentos de alta resolução, acesso remoto pelo celular e armazenamento seguro de imagens. Cada sistema é pensado de forma estratégica, garantindo cobertura completa e monitoramento eficiente dos espaços mais importantes.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Além da proteção, as câmeras também funcionam como um forte elemento de prevenção, inibindo ações indesejadas e trazendo mais segurança para residências, empresas e condomínios. Tudo isso com tecnologia acessível e fácil de usar no dia a dia.
+          </p>
+
           <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
-            Transforme a segurança do seu patrimônio com a liderança tecnológica da <strong className="text-white">Intelbras</strong>. 
-            Nossas soluções de CFTV vão muito além da gravação comum: entregamos inteligência artificial avançada para detecção humana precisa, 
-            evitando alarmes falsos, e visão noturna colorida mesmo em ambientes de baixa luminosidade. Tudo integrado 
-            ao ecossistema Intelbras, garantindo que você tenha acesso rápido, estável e seguro às suas imagens 
-            diretamente pelo seu celular, 24 horas por dia.
+            Atendemos Canoas e toda a região metropolitana com soluções personalizadas em segurança eletrônica. Fale com nossa equipe e descubra como ter mais controle e proteção no seu ambiente.
           </p>
 
           <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>

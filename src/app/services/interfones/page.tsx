@@ -9,7 +9,7 @@ import Faq from "@/components/faq/faq";
 export const metadata: Metadata = {
   title: "Interfones e Vídeo Porteiros Inteligentes | J.A Segurança",
   description: "Controle o acesso ao seu patrimônio com tecnologia de ponta. Vídeo porteiros com acesso via celular e áudio HD em Canoas e região.",
-  keywords: ["interfone", "porteiro eletrônico", "vídeo porteiro wifi", "controle de acesso", "J.A Segurança"],
+  keywords: ["interfone em canoas", "porteiro eletrônico em canoas", "vídeo porteiro wifi", "controle de acesso", "J.A Segurança"],
   openGraph: {
     title: "Comunicação e Acesso Seguro - J.A Segurança",
     description: "Identifique visitantes e abra portões de qualquer lugar.",
@@ -58,16 +58,24 @@ export default function InterfonesPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className={`${styles.animateIn} text-center lg:text-left`}>
           <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-            Identificação Total e <span className="text-(--color-secondary)">Acesso Seguro</span>
+            <span className="text-(--color-secondary)">Interfone</span> e Vídeo Porteiro em <span className="text-(--color-secondary)">Canoas</span>: Identificação Total e Acesso Seguro
           </h1>
-          
-          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
-            Não se exponha ao desconhecido. Com a linha de vídeo porteiros <strong className="text-white">Intelbras</strong>, você assume o controle da sua entrada principal. 
-            Nossa tecnologia permite que você visualize, converse e libere o acesso ao seu imóvel através do seu smartphone, esteja você onde estiver. 
-            É a união perfeita entre a segurança de saber quem toca à sua porta e a conveniência de comandar tudo na palma da sua mão. 
-            Proteja sua família e garanta que cada visitante seja devidamente identificado antes de qualquer interação.
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Ter controle sobre quem entra no seu espaço é essencial para garantir segurança no dia a dia. Com soluções modernas de interfone e vídeo porteiro, você consegue visualizar, se comunicar e autorizar acessos com praticidade, sem precisar se expor a situações de risco.
           </p>
 
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            Trabalhamos com instalação de vídeo porteiro em Canoas e região, utilizando equipamentos da <strong className="text-white">Intelbras</strong>, referência em tecnologia e confiabilidade. Os sistemas permitem atendimento remoto via smartphone, oferecendo mais comodidade e controle, esteja você em casa ou fora.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+            O uso de interfone com câmera é ideal para residências, empresas e condomínios que buscam reforçar a segurança na entrada principal. Além de identificar visitantes, você registra acessos e evita contatos desnecessários, criando um ambiente mais protegido e organizado.
+          </p>
+
+          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+            Atendemos Canoas e toda a região metropolitana, com projetos personalizados que integram segurança e tecnologia no seu dia a dia. Entre em contato e descubra a melhor solução para controlar o acesso ao seu imóvel com mais inteligência.
+          </p>
           <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
             <li className="flex gap-3 items-center">
               <span className="text-(--color-secondary)">✔</span> Tecnologia <strong className="text-white">Intelbras</strong> de vídeo e áudio HD

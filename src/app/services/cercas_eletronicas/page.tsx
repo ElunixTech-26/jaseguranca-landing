@@ -8,7 +8,7 @@ import Faq from "@/components/faq/faq";
 export const metadata: Metadata = {
   title: "Cercas Elétricas e Concertinas | J.A Segurança",
   description: "Instalação de cercas elétricas e concertinas em Canoas e região. Proteção perimetral robusta com alarme integrado e alta voltagem.",
-  keywords: ["cerca elétrica canoas", "concertina", "proteção perimetral", "segurança residencial", "J.A Segurança"],
+  keywords: ["cerca elétrica canoas", "concertina", "proteção perimetral", "segurança residencial em canoas", "J.A Segurança"],
   openGraph: {
     title: "Cercas e Concertinas - J.A Segurança Eletrônica",
     description: "Crie uma barreira intransponível no seu patrimônio.",
@@ -53,17 +53,24 @@ export default function CercasPage(){
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`${styles.animateIn} text-center lg:text-left`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Proteção Perimetral: A <span className="text-(--color-secondary)">Primeira Linha</span> de Defesa.
+            Cercas Elétricas e Concertinas em <span className="text-(--color-secondary)">Canoas</span>: Sua Primeira Linha de Defesa
             </h1>
             
-            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
-              Impeça a intrusão antes que ela aconteça. Nossas soluções de proteção perimetral combinam a robustez das concertinas em aço galvalume 
-              com a precisão tecnológica dos eletrificadores <strong className="text-white">Intelbras</strong>. Criamos um sistema que vai além da barreira física: 
-              é uma barreira psicológica e tecnológica intransponível. Desenvolvidos para resistir às intempéries, nossos sistemas monitoram 
-              constantemente a integridade do perímetro, disparando alertas imediatos ao menor sinal de tentativa de corte ou toque, garantindo 
-              a segurança total do seu patrimônio 24 horas por dia.
+            <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+              A segurança começa antes mesmo de qualquer tentativa de invasão. Com soluções de cercas elétricas e concertinas, você cria uma barreira eficiente que protege seu patrimônio desde o perímetro. Para quem busca mais proteção e tranquilidade, esse é um dos métodos mais eficazes disponíveis hoje.
             </p>
 
+            <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+              Trabalhamos com instalação de cercas elétricas em Canoas e região, utilizando materiais de alta resistência como aço galvalume e tecnologia confiável da <strong className="text-white">Intelbras</strong>. O sistema não apenas dificulta o acesso, mas também atua de forma preventiva, emitindo alertas imediatos em caso de tentativa de corte, toque ou violação.
+            </p>
+
+            <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+              Além da proteção física, a cerca elétrica funciona como um forte elemento dissuasivo. Residências, empresas e condomínios que investem nesse tipo de solução reduzem significativamente os riscos de invasão, combinando segurança ativa com baixo custo de manutenção.
+            </p>
+
+            <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+              Atendemos Canoas e toda a região metropolitana, levando projetos personalizados de proteção perimetral que se adaptam à realidade de cada cliente. Fale com nossa equipe e descubra a melhor solução para manter seu espaço seguro 24 horas por dia.
+            </p>
             <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
               <li className="flex gap-3 items-center">
                 <span className="text-(--color-secondary)">✔</span> Eletrificadores <strong className="text-white">Intelbras</strong> de alta potência

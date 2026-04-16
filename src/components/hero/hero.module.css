@@ -1,7 +1,8 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 40px);
+  /* height: calc(100vh - 40px); */
+  height: auto;
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -9,6 +10,7 @@
   overflow: hidden;
   background-color: var(--color-dark-bg);
   margin-top: -10px;
+  padding: 3em 0;
 }
 
 .overlay {
@@ -36,12 +38,15 @@
 
 .content p {
   animation-delay: 0.2s;
+  font-size: 1.1em;
+  line-height: 25px;
 }
 
 .content div {
   animation-delay: 0.4s;
 }
 
+ 
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -86,6 +91,10 @@
 
   .hero{
     margin-top: -20px;
+  }
+
+  .divH1{
+    width: 60%;
   }
 
 }

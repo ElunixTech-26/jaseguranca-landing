@@ -57,18 +57,25 @@ export default function CamerasPage() {
       <section className={styles.heroSection}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
          <div className={`${styles.animateIn} text-center lg:text-left`}>
-          <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-            Sua casa ou empresa, <span className="text-(--color-secondary)">sob seu comando.</span>
-          </h1>
-          
-          <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
-            Eleve o patamar do seu ambiente com a inteligência que antecipa suas necessidades. 
-            Na J.A Segurança, projetamos ecossistemas automatizados onde a iluminação, o clima e os acessos 
-            se ajustam automaticamente à sua rotina. Através de uma integração fluida com <strong className="text-white">Alexa e Google Assistente</strong>, 
-            transformamos comandos de voz em conforto absoluto e economia inteligente. 
-            Seja para criar o "clima de cinema" na sala de estar ou gerenciar a eficiência energética de uma empresa inteira, 
-            nossas soluções colocam o controle total na palma da sua mão, onde quer que você esteja.
-          </p>
+        <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
+          <span className="text-(--color-secondary)">Automação</span> Residencial em <span className="text-(--color-secondary)">Canoas</span>: Sua Casa Sob Seu Comando
+        </h1>
+
+        <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+          Imagine ter controle total do seu ambiente com apenas um toque ou comando de voz. A automação residencial transforma a forma como você vive, trazendo mais conforto, praticidade e eficiência para o seu dia a dia, seja em casa ou no seu negócio.
+        </p>
+
+        <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+          Desenvolvemos projetos de automação residencial em Canoas e região, integrando iluminação, climatização, segurança e acessos em um único sistema inteligente. Trabalhamos com tecnologias compatíveis com <strong className="text-white">Alexa e Google Assistente</strong>, permitindo que você controle tudo de forma simples, mesmo à distância.
+        </p>
+
+        <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
+          Com a automação, sua rotina se adapta ao seu estilo de vida. É possível programar cenários como "modo cinema", ajustar automaticamente a temperatura dos ambientes ou até otimizar o consumo de energia em empresas, reduzindo custos e aumentando a eficiência operacional.
+        </p>
+
+        <p className="text-(--color-text-secondary) text-lg mb-8 leading-relaxed max-w-2xl">
+          Atendemos Canoas e toda a região metropolitana com soluções personalizadas, pensadas para elevar o nível de conforto e tecnologia do seu espaço. Fale com nossa equipe e descubra como transformar seu ambiente em um sistema inteligente e totalmente conectado.
+        </p>
 
           <ul className={`${styles.checks} flex flex-col items-center lg:items-start`}>
             <li className="flex gap-3 items-center">

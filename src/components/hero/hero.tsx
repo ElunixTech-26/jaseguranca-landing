@@ -30,18 +30,18 @@ export default function Hero() {
       <div className={styles.overlay}></div>
       
       <div className={styles.content}>
-        <h1 className="font-poppins text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Automação e <span className="text-(--color-secondary)">Segurança</span> 
-          <br />
-          para <span className="text-(--color-secondary)">proteger</span> o que
-          <br/>
-          Realmente Importa.
-        </h1>
-        
-        <p className="text-(--color-text-secondary) text-lg md:text-xl max-w-2xl mb-10">
-            Soluções de segurança eletrônica de alta qualidade <br/>para proteger seus negócios, residências e propriedades. 
-        </p>
+        <div className={styles.divH1}>
+          <h1 className="font-poppins text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <span className="text-(--color-secondary)">Segurança</span> Eletrônica e Automação em Canoas
+            <br />
+            Proteja o que <span className="text-(--color-secondary)">Realmente</span> Importa
+          </h1>
+        </div>
 
+        <p className="text-(--color-text-secondary) text-lg md:text-xl max-w-2xl mb-10">
+          Projetos completos de segurança eletrônica com instalação de câmeras, alarmes, cercas elétricas e automação de portões. 
+          Atendemos residências, empresas e condomínios em Canoas e região.
+        </p>
         <div className="flex flex-col md:flex-row gap-4">
           <Link 
             href="/#contato" 
