@@ -34,7 +34,7 @@ export default function Hero() {
           <h1 className="font-poppins text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             <span className="text-(--color-secondary)">Segurança</span> Eletrônica e Automação em Canoas
             <br />
-            Proteja o que <span className="text-(--color-secondary)">Realmente</span> Importa
+             <span className="text-(--color-secondary)">Proteja</span> o que Realmente Importa
           </h1>
         </div>
 

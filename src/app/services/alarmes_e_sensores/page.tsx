@@ -54,11 +54,13 @@ export default function SensoresEAlarmesPage() {
 
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
+        <div className="w-full text-center items-center flex flex-col justify-center">
+          <h1 className="pageTitle">
+            <span className="text-(--color-secondary)">Alarmes</span> em <span className="text-(--color-secondary)">Canoas</span><br/> Proteção Invisível e Monitoramento Ativo
+          </h1>
+        </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
          <div className={`${styles.animateIn} text-center lg:text-left`}>
-           <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-            <span className="text-(--color-secondary)">Alarmes</span> em <span className="text-(--color-secondary)">Canoas</span>: Proteção Invisível e Monitoramento Ativo
-          </h1>
 
           <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
             A segurança mais eficiente é aquela que age antes mesmo de qualquer tentativa de invasão. Com sistemas modernos de alarme, você cria uma camada de proteção inteligente que monitora continuamente seu ambiente, trazendo mais tranquilidade para o dia a dia.

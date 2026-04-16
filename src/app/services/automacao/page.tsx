@@ -55,11 +55,14 @@ export default function CamerasPage() {
 
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
+
+        <div className="w-full text-center items-center flex flex-col justify-center">
+          <h1 className="pageTitle">
+            <span className="text-(--color-secondary)">Automação</span> Residencial em <span className="text-(--color-secondary)">Canoas</span><br/> Sua Casa Sob Seu Comando
+          </h1>
+        </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
          <div className={`${styles.animateIn} text-center lg:text-left`}>
-        <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-          <span className="text-(--color-secondary)">Automação</span> Residencial em <span className="text-(--color-secondary)">Canoas</span>: Sua Casa Sob Seu Comando
-        </h1>
 
         <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
           Imagine ter controle total do seu ambiente com apenas um toque ou comando de voz. A automação residencial transforma a forma como você vive, trazendo mais conforto, praticidade e eficiência para o seu dia a dia, seja em casa ou no seu negócio.

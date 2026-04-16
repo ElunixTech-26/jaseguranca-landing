@@ -49,11 +49,13 @@ export default function PortaoPage(){
 
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
+        <div className="w-full text-center items-center flex flex-col justify-center">
+          <h1 className={styles.pageTitle}>
+            Automação de Portões em <span className="text-(--color-secondary)">Canoas</span><br/> com Abertura Rápida e Segura
+          </h1>
+        </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
            <div className={`${styles.animateIn} text-center lg:text-left`}>
-            <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-              Automação de Portões em <span className="text-(--color-secondary)">Canoas</span> com Abertura Rápida e Segura
-            </h1>
 
             <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
               Um dos momentos mais vulneráveis do dia é quando você chega em casa ou na empresa e precisa aguardar a abertura do portão. Com a automação certa, esse processo se torna rápido, seguro e praticamente imperceptível, reduzindo sua exposição e trazendo mais tranquilidade na rotina.

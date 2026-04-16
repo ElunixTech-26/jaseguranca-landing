@@ -55,11 +55,13 @@ export default function InterfonesPage() {
 
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
+        <div className="w-full text-center items-center flex flex-col justify-center">
+          <h1 className="pageTitle">
+            <span className="text-(--color-secondary)">Interfone</span> e Vídeo Porteiro em <span className="text-(--color-secondary)">Canoas</span><br/> Identificação Total e Acesso Seguro
+          </h1>
+        </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className={`${styles.animateIn} text-center lg:text-left`}>
-          <h1 className="text-4xl md:text-6xl font-bold text-white font-poppins mb-6">
-            <span className="text-(--color-secondary)">Interfone</span> e Vídeo Porteiro em <span className="text-(--color-secondary)">Canoas</span>: Identificação Total e Acesso Seguro
-          </h1>
 
           <p className="text-(--color-text-secondary) text-lg mb-6 leading-relaxed max-w-2xl">
             Ter controle sobre quem entra no seu espaço é essencial para garantir segurança no dia a dia. Com soluções modernas de interfone e vídeo porteiro, você consegue visualizar, se comunicar e autorizar acessos com praticidade, sem precisar se expor a situações de risco.
