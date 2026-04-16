@@ -86,17 +86,23 @@ export default function CamerasPage() {
           {/*Foto 1 (Principal): Uma sala de estar moderna com iluminação aconchegante (que você automatizou).
             Foto 2 (Detalhe): Um close de um smartphone com o App de automação aberto (mostrando o controle do Ar ou da TV).
             Foto 3 (Detalhe): Uma pessoa dando um comando de voz perto de uma Echo Dot (Alexa) ou um interruptor touch inteligente. */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
+          <div className="grid grid-cols-1 gap-4 h-auto lg:h-[700px] w-full">
             
-            <div className={`${styles.animateIn} relative lg:col-span-15 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} relative lg:col-span-15 lg:row-span-2 h-[500px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
-              <Image 
-                src="/illustrative/automacao-img.png" 
-                alt="Imagem conceitual de automação em residencial" 
-                fill 
-                priority
-                className="object-fill hover:scale-105 transition-transform duration-500"
-              />
+                <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="100%" 
+                  height="auto" 
+                  controls // Mostra os botões de play/pause
+                  className="h-full w-full object-cover rounded-3xl border border-(--color-border-subtle)"
+                >
+                <source src="/videos/video-leo-automacao-1.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
             </div>
           </div>
           
