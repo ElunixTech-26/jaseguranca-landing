@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ["câmeras de segurança em canoas", "monitoramento 24h", "segurança eletrônica canoas", "instalação cftv canoas", "J.A Segurança"],
   // OpenGraph faz o link ficar bonito quando compartilhado no WhatsApp/Social
   openGraph: {
-    title: "Monitoramento Inteligente - J.A Segurança Eletrônica",
+    title: "Câmeras de Segurança em Canoas | J.A Segurança Eletrônica",
     description: "Sistemas de alta performance com acesso pelo celular.",
     images: ["/illustrative/service-camera-card.png"], // Imagem que aparece no compartilhamento
   },

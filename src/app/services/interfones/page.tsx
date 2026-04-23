@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Controle o acesso ao seu patrimônio com tecnologia de ponta. Vídeo porteiros com acesso via celular e áudio HD em Canoas e região.",
   keywords: ["interfone em canoas", "porteiro eletrônico em canoas", "vídeo porteiro wifi", "controle de acesso", "J.A Segurança"],
   openGraph: {
-    title: "Comunicação e Acesso Seguro - J.A Segurança",
+    title: "Interfones e Vídeo Porteiros Inteligentes | J.A Segurança",
     description: "Identifique visitantes e abra portões de qualquer lugar.",
     images: ["/illustrative/footprint-card.png"],
   },

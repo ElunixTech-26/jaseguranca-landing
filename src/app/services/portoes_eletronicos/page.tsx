@@ -6,11 +6,11 @@ import { Metadata } from "next";
 import Faq from "@/components/faq/faq";
 
 export const metadata: Metadata = {
-  title: "Portões Eletrônicos | J.A Segurança",
+  title: "Portões Eletrônicos em Canoas| J.A Segurança",
   description: "Instalação profissional de Portões Eletrônicos, com alta velocidade de fechamento em Canoas e região. Proteja seu patrimônio com tecnologia de ponta.",
   keywords: ["portões eletrônicos em canoas", "portão rápido", "segurança eletrônica canoas", "instalação de portões em canoas", "J.A Segurança", "canoas"],
   openGraph: {
-    title: "Portôes ultra-rápidos - J.A Segurança Eletrônica",
+    title: "Portões Eletrônicos em Canoas| J.A Segurança",
     description: "Sistemas de portões com alta velocidade e maior segurança para o ambiente.",
     images: ["/illustrative/portao-card.png"],
   },

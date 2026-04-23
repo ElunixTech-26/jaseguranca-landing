@@ -5,11 +5,11 @@ import { Metadata } from "next";
 import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Sensores de Alarme e Barreira Infravermelha | J.A Segurança",
+  title: "Sensores de Alarme e Barreira Infravermelha em Canoas | J.A Segurança",
   description: "Proteja seu patrimônio com sistemas de alarme inteligentes e sensores de barreira. Monitoramento 24h, tecnologia de ponta e alertas no celular em Canoas.",
   keywords: ["sistema de alarme em canoas", "sensor de barreira infravermelho", "alarme monitorado canoas", "segurança residencial", "detecção de movimento", "J.A Segurança"],
   openGraph: {
-    title: "Alarme e Proteção Inteligente - J.A Segurança",
+    title: "Sensores de Alarme e Barreira Infravermelha em Canoas | J.A Segurança",
     description: "Detecção imediata de invasões com tecnologia de ponta.",
     images: ["/illustrative/sensor-e-alarme-card.png"],
   },

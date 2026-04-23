@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Transforme sua casa ou empresa com automação inteligente. Controle iluminação, ar-condicionado, portões e mais via voz ou smartphone. Tecnologia de ponta em Canoas.",
   keywords: ["automação residencial", "casa inteligente", "automação empresarial", "Alexa", "Google Home", "smart home canoas", "J.A Segurança"],
   openGraph: {
-    title: "Sua Casa Inteligente - J.A Segurança",
+    title: "Automação Residencial e Empresarial Inteligente | J.A Segurança",
     description: "Conforto, economia e tecnologia sob seu comando.",
     images: ["/illustrative/automacao-card.png"],
   },

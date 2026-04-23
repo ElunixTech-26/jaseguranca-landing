@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Instalação de cercas elétricas e concertinas em Canoas e região. Proteção perimetral robusta com alarme integrado e alta voltagem.",
   keywords: ["cerca elétrica canoas", "concertina", "proteção perimetral", "segurança residencial em canoas", "J.A Segurança"],
   openGraph: {
-    title: "Cercas e Concertinas - J.A Segurança Eletrônica",
+    title: "Cercas Elétricas e Concertinas | J.A Segurança",
     description: "Crie uma barreira intransponível no seu patrimônio.",
     images: ["/illustrative/cercas-card.png"],
   },
