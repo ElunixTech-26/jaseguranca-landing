@@ -96,8 +96,8 @@ export default function CamerasPage() {
             <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[400px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
                 style={{ animationDelay: '0.4s' }}>
               <Image 
-                src="/camera-poste.png" 
-                alt="Câmera instalada em um poste." 
+                src="/imagem-leo-instalando-camera-em-canoas.jpeg" 
+                alt="Equipe JA instalando câmera de segurança" 
                 fill 
                 priority
                 className="object-cover hover:scale-105 transition-transform duration-500"

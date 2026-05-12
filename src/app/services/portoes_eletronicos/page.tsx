@@ -50,7 +50,7 @@ export default function PortaoPage(){
       {/* HERO DA PÁGINA */}
       <section className={styles.heroSection}>
         <div className="w-full text-center items-center flex flex-col justify-center">
-          <h1 className={styles.pageTitle}>
+          <h1 className="pageTitle">
             Automação de Portões em <span className="text-(--color-secondary)">Canoas</span><br/> com Abertura Rápida e Segura
           </h1>
         </div>
@@ -87,11 +87,27 @@ export default function PortaoPage(){
 
           <div className="grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-2 gap-4 h-auto lg:h-[550px] w-full">
           
-            <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[550px] lg:h-full rounded-3xl overflow-hidden border border-(--color-border-subtle)`}
+            <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[550px] lg:h-full rounded-3xl               overflow-hidden border border-(--color-border-subtle) md:hidden`}
                 style={{ animationDelay: '0.2s' }}>
 
               <video 
                   autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width="100%" 
+                  height="auto" 
+                  controls // Mostra os botões de play/pause
+                  className="h-full w-full object-cover rounded-3xl border border-(--color-border-subtle)"
+                >
+                <source src="/videos/video-mostrando-portao-eletronico.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
+            <div className={`${styles.animateIn} relative lg:col-span-7 lg:row-span-2 h-[550px] lg:h-full rounded-3xl               overflow-hidden border border-(--color-border-subtle)`}
+                style={{ animationDelay: '0.2s' }}>
+
+              <video 
                   loop
                   muted
                   playsInline
