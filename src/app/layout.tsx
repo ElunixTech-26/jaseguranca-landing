@@ -4,6 +4,7 @@ import { Inter, Poppins, Montserrat } from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import Analytics from "@/components/analytics/analytics";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
         url: "/illustrative/leo-cartoon.png",
         width: 1200,
         height: 630,
-        alt: "Clínica Terapias do Corpo — Porto Alegre",
+        alt: "J.A Segurança Eletrônica em Canoas",
       },
     ],
   },
@@ -76,22 +77,11 @@ const schemaMarkup = {
     addressCountry: "BR",
   },
   areaServed: [
-    {
-      "@type": "City",
-      name: "Canoas",
-    },
-    {
-      "@type": "City",
-      name: "Porto Alegre",
-    },
-    {
-      "@type": "City",
-      name: "Esteio",
-    },
-    {
-      "@type": "City",
-      name: "Sapucaia do Sul",
-    },
+    { "@type": "City", name: "Canoas" },
+    { "@type": "City", name: "Esteio" },
+    { "@type": "City", name: "Nova Santa Rita" },
+    { "@type": "City", name: "Sapucaia do Sul" },
+    { "@type": "City", name: "São Leopoldo" },
   ],
   geo: {
     "@type": "GeoCoordinates",
@@ -130,6 +120,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
+        <Analytics/>
       </body>
     </html>
   );

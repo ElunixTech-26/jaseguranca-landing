@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./cta.module.css";
+import { track } from "@/lib/analytics";
 
 interface CtaProps {
   servicoPadrao?: string; 
@@ -18,6 +19,9 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
 
   const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Rastreia o pedido de orçamento com o serviço escolhido
+    track("envio_formulario", { servico: formData.servico.trim() });
     
     // Configuração do WhatsApp
     const numeroTelefone = "555183490527"; 
