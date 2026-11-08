@@ -3,13 +3,14 @@
 import { useState } from "react";
 import styles from "./cta.module.css";
 import { track } from "@/lib/analytics";
+import { saudacao, linkWhatsapp } from "@/lib/origem";
 
 interface CtaProps {
   servicoPadrao?: string; 
 }
 
 //nenhum é o padrão caso não venha args
-export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
+export default function Cta( {servicoPadrao = ""}: CtaProps) {
 
   const [formData, setFormData] = useState({
     nome: "",
@@ -23,12 +24,9 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
     // Rastreia o pedido de orçamento com o serviço escolhido
     track("envio_formulario", { servico: formData.servico.trim() });
     
-    // Configuração do WhatsApp
-    const numeroTelefone = "555183490527"; 
-    const mensagem = `Olá, vim pelo site! Meu nome é ${formData.nome}, moro em ${formData.cidade}. Gostaria de um orçamento para ${formData.servico}.`;
-    
-    const url = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, "_blank");
+    // Mensagem pronta do WhatsApp (avisa se a pessoa veio do anúncio)
+    const mensagem = `${saudacao()} Meu nome é ${formData.nome}, moro em ${formData.cidade}. Gostaria de um orçamento para ${formData.servico}.`;
+    window.open(linkWhatsapp(mensagem), "_blank");
   };
 
   return (
@@ -93,7 +91,7 @@ export default function Cta( {servicoPadrao = "nenhum "}: CtaProps) {
                 required
                 onChange={(e) => setFormData({...formData, servico: e.target.value})}
               >
-                <option value="nenhum" disabled>Escolha o serviço desejado</option>
+                <option value="" disabled>Escolha o serviço desejado</option>
                 <option value="Câmeras de Segurança">Câmera de Segurança</option>
                 <option value="Automação Residencial">Automação Residencial</option>
                 <option value="Portão Eletrônico">Portão Eletrônico</option>

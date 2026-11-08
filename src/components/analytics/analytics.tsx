@@ -3,11 +3,14 @@
 import Script from "next/script";
 import { useEffect } from "react";
 import { GA_ID, track } from "@/lib/analytics";
+import { registrarOrigem, ajustarLinkWhatsapp } from "@/lib/origem";
 
 // Carrega o GA4 e rastreia automaticamente qualquer link de WhatsApp ou telefone do site.
 // "local" diz de onde veio o clique: usa data-track no link, se tiver, ou a área da página.
 export default function Analytics() {
   useEffect(() => {
+    registrarOrigem();
+
     const onClick = (e: MouseEvent) => {
       const link = (e.target as HTMLElement | null)?.closest("a");
       if (!link) return;
@@ -20,6 +23,8 @@ export default function Analytics() {
 
       if (href.includes("wa.me") || href.includes("api.whatsapp.com")) {
         track("clique_whatsapp", { local });
+        // Se veio do anúncio, a mensagem avisa o técnico (troca o href antes de navegar)
+        link.setAttribute("href", ajustarLinkWhatsapp(href));
       } else if (href.startsWith("tel:")) {
         track("clique_telefone", { local });
       }

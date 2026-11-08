@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import Analytics from "@/components/analytics/analytics";
+import WhatsappFlutuante from "@/components/whatsapp-flutuante/whatsapp-flutuante";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -120,6 +121,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
+        <WhatsappFlutuante/>
         <Analytics/>
       </body>
     </html>
