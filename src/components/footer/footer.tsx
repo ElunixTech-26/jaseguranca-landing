@@ -56,9 +56,6 @@ export default function Footer() {
               <Link href={"/services/cercas_eletronicas"}>Cercas Eletrônicas</Link>
             </li>
             <li>
-              <Link href={"/services/interfones"}>Controle de Acesso</Link>
-            </li>
-            <li>
               <Link href={"/services/automacao"}>Automação Residencial</Link>
             </li>
             <li>

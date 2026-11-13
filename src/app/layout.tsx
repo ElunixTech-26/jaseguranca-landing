@@ -68,7 +68,7 @@ const schemaMarkup = {
   "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
   name: "J.A Segurança Eletrônica",
   description:
-    "Empresa especializada em segurança eletrônica em Canoas e região metropolitana. Instalação de câmeras de segurança, alarmes, cercas elétricas, automação de portões e controle de acesso para residências, empresas e condomínios.",
+    "Empresa especializada em segurança eletrônica em Canoas e região metropolitana. Instalação de câmeras de segurança, alarmes, cercas elétricas e automação de portões para residências, empresas e condomínios.",
   url: "https://www.jasegurancars.com.br",  
   telephone: "+55-51-83490527",  
   address: {

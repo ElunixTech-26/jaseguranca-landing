@@ -23,12 +23,6 @@ const services = [
     url: "services/cercas_eletronicas"
   },
   {
-    title: "Interfones e Porteiros Eletrônicos",
-    description: "Comunicação clara e abertura remota de portões. Sistemas analógicos e digitais com vídeo HD para identificação segura de visitantes. Praticidade e segurança no seu acesso.",
-    image: "/illustrative/footprint-card.png",
-    url: "services/interfones"
-  },
-  {
     title: "Sensores e Alarmes Inteligentes",
     description: "Proteção invisível com tecnologia de barreira infravermelha. Detecção precisa de movimento com envio de alertas em tempo real. Segurança total, dia e noite.",
     image: "/illustrative/sensor-e-alarme-card.png",

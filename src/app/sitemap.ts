@@ -28,12 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://www.jasegurancars.com.br/services/interfones',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: 'https://www.jasegurancars.com.br/services/automacao',
       lastModified: new Date(),
       changeFrequency: 'monthly',

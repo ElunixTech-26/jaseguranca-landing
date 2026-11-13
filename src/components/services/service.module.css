@@ -23,6 +23,11 @@
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* número ímpar de cards: o último ocupa a linha inteira */
+  .serviceCard:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
 }
 
 /* Card de Serviço */
