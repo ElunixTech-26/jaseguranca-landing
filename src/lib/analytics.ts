@@ -6,8 +6,8 @@ export const ADS_ID = "AW-17913409566";
 
 // Evento do GA4 -> rótulo da ação de conversão no Ads
 const ADS_CONVERSOES: Record<string, string> = {
-  clique_whatsapp: "", // ação "WhatsApp - J.A"
-  envio_formulario: "", // ação "Formulário - J.A"
+  clique_whatsapp: "gZbwCLf4wbgdEJ7g491C", // ação "WhatsApp - J.A"
+  envio_formulario: "PQXvCLr4wbgdEJ7g491C", // ação "Formulário - J.A"
 };
 
 type EventParams = Record<string, string | number | undefined>;
