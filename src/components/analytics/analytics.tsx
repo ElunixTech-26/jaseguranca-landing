@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import { useEffect } from "react";
-import { GA_ID, track } from "@/lib/analytics";
+import { GA_ID, ADS_ID, track } from "@/lib/analytics";
 import { registrarOrigem, ajustarLinkWhatsapp } from "@/lib/origem";
 
 // Carrega o GA4 e rastreia automaticamente qualquer link de WhatsApp ou telefone do site.
@@ -48,7 +48,8 @@ export default function Analytics() {
 function gtag(){dataLayer.push(arguments);}
 window.gtag = gtag;
 gtag('js', new Date());
-gtag('config', '${GA_ID}');`}
+gtag('config', '${GA_ID}');
+gtag('config', '${ADS_ID}');`}
       </Script>
     </>
   );
